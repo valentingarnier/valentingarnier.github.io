@@ -22,6 +22,7 @@ Will this be enough to discover who's the one?
 #### Visualize how the possible guilties are distributed over the world : their homes
 
 Ajouter la carte des homes
+
 htmltools::includeHTML("/assets/homes_map.html")
 
 
