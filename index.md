@@ -45,11 +45,7 @@ Ajouter top10countries
 
 Ajouter top10friendships
 
-{{ $r := resources.Get (printf "plotly/%s.html" ($.Get 0)) }}
-
-{{ $r.Content | safeHTML }}
-
-{{< plotly /assets/top10friends >}}
+<iframe src="assets/top10friends.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 ### Prediction
 
