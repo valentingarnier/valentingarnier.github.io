@@ -45,8 +45,10 @@ htmltools::includeHTML("/assets/top10visited.html")
 Ajouter top10friendships
 
 {{ $r := resources.Get (printf "plotly/%s.html" ($.Get 0)) }}
+
 {{ $r.Content | safeHTML }}
-{{< plotly top10friends >}}
+
+{{< plotly /assets/top10friends >}}
 
 ### Prediction
 
