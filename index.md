@@ -21,7 +21,7 @@ Will this be enough to discover who's the one?
 ### Background
 #### Visualize how the possible guilties are distributed over the world : their homes
 
-<div align="center"><iframe src="assets/homes_map.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+<div align="center"><iframe src="assets/homes_map.html" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
 
 #### Vizualize the pattern of how do the possible guilties move over the world: their travels
