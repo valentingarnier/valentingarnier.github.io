@@ -6,7 +6,6 @@ cover-img: /assets/img/travels.png
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/travels.png
 order: 1
-full-width: True
 ---
 
 ## Introduction
