@@ -24,6 +24,6 @@ Will this be enough to discover who's the one?
 
 #### Analysing the pattern of how do the possible guilties move over the world: their travels
 
-![Alt Text](assets/img/animated.gif)
+![Alt Text](assets/img/animated-2.gif)
 
 
