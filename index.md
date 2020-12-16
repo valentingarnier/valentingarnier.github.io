@@ -23,7 +23,7 @@ Will this be enough to discover who's the one?
 
 Ajouter la carte des homes
 
-htmltools::includeHTML("/assets/homes_map.html")
+<iframe src="assets/homes_map.html" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
