@@ -10,7 +10,7 @@ order: 1
 <p align="justify">
 
 Bijour Maina ici c'est du
-# markdown centré {style=text-align:center}
+# markdown centré?
 ![Alt Text](assets/img/animated.gif)
 
 
