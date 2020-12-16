@@ -13,7 +13,7 @@ Early 2000s, fews crimes were commited inside airports. To elucidate this myster
 
 To solve it, they dispose of the homes, the travels and the contacts of all the people which are considerate as "possible guilties".
 
-Will this be enough to discover who's the guilty?
+Will this be enough to discover who's the one?
 
 ![Alt Text](assets/img/animated.gif)
 
