@@ -15,6 +15,15 @@ To solve it, they dispose of the homes, the travels and the contacts of all the 
 
 Will this be enough to discover who's the one?
 
+
+# How Sherlock and his team has proceeded to solve the mytery
+
+## Background
+### Analysing how the possible guilties are distributed over the world : their homes
+
+
+### Analysing the pattern of how do the possible guilties move over the world: their travels
+
 ![Alt Text](assets/img/animated.gif)
 
 
