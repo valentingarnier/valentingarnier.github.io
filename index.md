@@ -9,7 +9,7 @@ order: 1
 ---
 
 Bijour Maina ici c'est du
-# markdown
+# markdown centré {style=text-align:center}
 ![Alt Text](assets/img/animated.gif)
 
 
