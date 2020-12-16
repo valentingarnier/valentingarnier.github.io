@@ -9,8 +9,14 @@ order: 1
 ---
 
 # Introduction
-Early 2000, fews crimes were commited inside airports. To elucidate this mystery and finally find who is responsable of those terrible acts, the mondial government called the most qualified team: the one and only Sherlock Holmes along with his little sister Enola Holmes, and his best friend the Doctor Watson.
+Early 2000s, fews crimes were commited inside airports. To elucidate this mystery and finally find who is responsable of those terrible acts, the mondial government called the most qualified team: the one and only Sherlock Holmes along with his little sister Enola Holmes, and his best friend the Doctor Watson.
 
+To solve it, they dispose of several informations on the set of worldwide people which are considerate as "possible guilties": 
+  - their homes
+  - their travels
+  - their contacts 
+
+Would this be enough to discover who's the guilty?
 
 ![Alt Text](assets/img/animated.gif)
 
