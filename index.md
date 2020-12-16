@@ -19,11 +19,29 @@ Will this be enough to discover who's the one?
 ## How Sherlock and his team has proceeded to solve the mytery
 
 ### Background
-#### Analysing how the possible guilties are distributed over the world : their homes
+#### Visualize how the possible guilties are distributed over the world : their homes
 
+Ajouter la carte des homes
 
-#### Analysing the pattern of how do the possible guilties move over the world: their travels
+#### Vizualize the pattern of how do the possible guilties move over the world: their travels
 
 ![Alt Text](assets/img/animated-2.gif)
+
+Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo
+
+
+### Analysis
+#### Analyse which are the top 10 countries to which the possible guilties travel based on their own country
+
+Ajouter top10countries
+
+#### Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country
+
+Ajouter top10friendships
+
+### Prediction
+
+... notre modele est mauvais
+
 
 
