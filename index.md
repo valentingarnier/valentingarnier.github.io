@@ -21,10 +21,7 @@ Will this be enough to discover who's the one?
 ### Background
 #### Visualize how the possible guilties are distributed over the world : their homes
 
-Ajouter la carte des homes
-
 <div align="center"><iframe src="assets/homes_map.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-
 
 
 #### Vizualize the pattern of how do the possible guilties move over the world: their travels
@@ -37,13 +34,9 @@ Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo
 ### Analysis
 #### Analyse which are the top 10 countries to which the possible guilties travel based on their own country
 
-Ajouter top10countries
-
 <div align="center"><iframe src="assets/top10visited.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
 #### Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country
-
-Ajouter top10friendships
 
 <div align="center"><iframe src="assets/top10friends.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
