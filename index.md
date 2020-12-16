@@ -34,6 +34,7 @@ Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo
 #### Analyse which are the top 10 countries to which the possible guilties travel based on their own country
 
 Ajouter top10countries
+
 htmltools::includeHTML("/assets/top10visited.html")
 
 #### Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country
