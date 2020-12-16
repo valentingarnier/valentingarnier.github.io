@@ -7,7 +7,6 @@ thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/travels.png
 order: 1
 ---
-<p align="justify">
 
 Bijour Maina ici c'est du
 # markdown centré?
@@ -15,5 +14,3 @@ Bijour Maina ici c'est du
 
 
 et on a juste a mettre la story
-  
-</p>
