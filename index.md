@@ -23,7 +23,7 @@ Will this be enough to discover who's the one?
 
 Ajouter la carte des homes
 
-<iframe src="assets/homes_map.html" width="800" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="assets/homes_map.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
