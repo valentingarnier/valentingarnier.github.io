@@ -23,7 +23,7 @@ Will this be enough to discover who's the one?
 
 Ajouter la carte des homes
 
-<iframe src="assets/homes_map.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe style="margin:auto; display:block;" src="assets/homes_map.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
@@ -39,13 +39,13 @@ Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo
 
 Ajouter top10countries
 
-<iframe src="assets/top10visited.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe style="margin:auto; display:block;" src="assets/top10visited.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 #### Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country
 
 Ajouter top10friendships
 
-<iframe src="assets/top10friends.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe style="margin:auto; display:block;" src="assets/top10friends.html" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 ### Prediction
 
