@@ -17,11 +17,11 @@ Will this be enough to discover who's the one?
 
 
 ## How Sherlock and his team has proceeded to solve the mytery
-
+<div align="center">
 ### Background
 #### Visualize how the possible guilties are distributed over the world : their homes
 
-<div align="center"><iframe src="assets/homes_map.html" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+<iframe src="assets/homes_map.html" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
 
 #### Vizualize the pattern of how do the possible guilties move over the world: their travels
