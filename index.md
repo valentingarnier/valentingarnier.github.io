@@ -26,7 +26,6 @@ Ajouter la carte des homes
 htmltools::includeHTML("/assets/homes_map.html")
 
 
-coucouuuuu
 
 #### Vizualize the pattern of how do the possible guilties move over the world: their travels
 
