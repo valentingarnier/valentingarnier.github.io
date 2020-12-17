@@ -71,10 +71,12 @@ Predicting at random would yield an accuracy of 33%. Here they obtained an accur
 <center> <h2>About the team </h2> </center>
 
 
-|Sherlock Holmes                              |Enola Holmes                                   |Doctor Watson                             |
+
+
+ Sherlock Holmes                              | Enola Holmes                                 | Doctor Watson                             
 :--------------------------------------------:|:--------------------------------------------:|:-----------------------------------------:
 <img src="/assets/img/val.png" width="120">   |<img src="/assets/img/maina.png" width="120"> |<img src="/assets/img/apo.png" width="120">
 :--------------------------------------------:|:--------------------------------------------:|:-----------------------------------------:
-| Valentin Garnier                            |Maina Orchampt-Mareschal                     |Alexander Apostolov                       |
+ Valentin Garnier                             | Maina Orchampt-Mareschal                     |Alexander Apostolov                       
 
    
