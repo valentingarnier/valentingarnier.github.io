@@ -69,7 +69,7 @@ Predicting at random would yield an accuracy of 33%. Here they obtained an accur
 
 Sherlock Holmes                              |  Enola Holmes                                 |  Doctor Watson                           |
 :-------------------------------------------:|:---------------------------------------------:|:-----------------------------------------:
-<img src="/assets/img/val.png" width="200">  |<img src="/assets/img/maina.png" width="200">  |<img src="/assets/img/apo.png" width="200"> 
+<img src="/assets/img/val.png" width="100">  |<img src="/assets/img/maina.png" width="100">  |<img src="/assets/img/apo.png" width="100"> 
 
 
 
