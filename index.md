@@ -46,7 +46,7 @@ Still using the check-ins of the possible guilties, we only kept pairs of check-
 In the following gif, we showed the air trafic according to the different months of the year. We can see that there are severaly big nodes which are mainly in the east North American coast, and in the center of Europe.
 
 <p align="center">
-  ![Alt Text](assets/img/animated-2.gif)
+  <img src="assets/img/animated-2.gif" alt="animated" />
 </p>
 
 Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo + description
