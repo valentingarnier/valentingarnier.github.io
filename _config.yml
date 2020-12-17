@@ -14,7 +14,7 @@ author: PIA Team
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Us: "aboutus.md"
+  About Us: "https://github.com/valentingarnier/valentingarnier.github.io/blob/master/aboutus.md"
 
 # --- Logo --- #
 
