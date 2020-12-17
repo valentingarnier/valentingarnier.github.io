@@ -50,7 +50,7 @@ In the following gif, we showed the air trafic according to the different months
 </p>
 
 <p align="center">
-  <iframe style="margin:auto;display:block;" src="assets/global_distance_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe style="margin:auto;display:block;" src="assets/global_distance_travelled.html" width="60%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
 <p align="center">
@@ -58,7 +58,7 @@ In the following gif, we showed the air trafic according to the different months
 </p>
 
 <p align="center">
-  <iframe style="margin:auto;display:block;" src="assets/global_number_trips_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe style="margin:auto;display:block;" src="assets/global_number_trips_travelled.html" width="60%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
 <p align="center">
