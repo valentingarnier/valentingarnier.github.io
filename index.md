@@ -8,7 +8,7 @@ share-img: /assets/img/travels.png
 order: 1
 ---
 
-## Introduction
+## ***Chapter 0***
 Early 2000s, all the front pages of the news papers are covered by the same story: few crimes were commited inside different airports all around the world: John F. Kennedy International Airport, Sydney Kingsford Smith Airport, Cointrin Geneva Airport.. and the list is long. It seems that to achieve some many, the guily has partners. 
 
 It's been months now that the first crime has been done and that this tragedy continue. People start to be scared to take the plane and the airlines company are worrying about their futur. 
@@ -19,8 +19,8 @@ To solve it, they dispose of the check-ins and the contacts of all the people wh
 
 Will this be enough to discover who's the one?
 
-
 ## How Sherlock and his team has proceeded to solve the mytery
+## ***Chapter 1***
 ### Background
 #### Visualize how the possible guilties are distributed over the world : their homes
 
@@ -35,7 +35,7 @@ Thanks to the check-ins of the people, they have computed approximately their ho
 
 Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo
 
-
+## ***Chapter 2***
 ### Analysis
 #### Analyse which are the top 10 countries to which the possible guilties travel based on their own country
 
