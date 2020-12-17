@@ -69,8 +69,7 @@ Predicting at random would yield an accuracy of 33%. Here they obtained an accur
 
 
   
-    Valentin Garnier                           |  Maina Orchampt-Mareschal                     |  Alexander Apostolov                     |
-    alias Sherlock Holmes                      |  alias Enola Holmes                           |  alias Doctor Watson                     |
+    V. Garnier alias Sherlock Holmes           |  M. Orchampt-Mareschal alias Enola Holmes     |  A. Apostolov alias Doctor Watson  
   :-------------------------------------------:|:---------------------------------------------:|:-----------------------------------------:
   <img src="/assets/img/val.png" width="100">  |<img src="/assets/img/maina.png" width="100">  |<img src="/assets/img/apo.png" width="100"> 
 
