@@ -32,6 +32,12 @@ Thanks to the check-ins of the people, we have computed approximately their home
 </p>
 
 
+We can note that some areas of the world such as Central Africa and Central Asia are almost not covered in the data we have. We see that most users we are consideringlive in Europe, North America and Japan.  
+This means that the results of this research are probably somehow biased since most users come from similar places.  
+All the following analysis should thus be interpreted keeping in mind this fact.  
+We might, as a lot of research in the scientific litterature,  suffer from a [WEIRD (Western, educated, industrialized, rich and democratic) bias](https://www.apa.org/monitor/2010/05/weird). 
+For example, it is quite probable that potential user that are not covered in our data and do not come from WEIRD countries will have other patterns in their long distance travels.
+
 
 
 #### Vizualize the pattern of how people move over the world
