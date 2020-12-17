@@ -6,4 +6,7 @@ order: 1
 
 ## Members
 
-![Sherlock Holmes](/assets/img/val.png)) ![Enola Holmes](/assets/img/maina.png)) ![Doctor Watson](/assets/img/apo.png))
+Sherlock Holmes            |  Enola Holmes             | Doctor Watson            |
+:-------------------------:|:-------------------------:|:-------------------------:
+![](/assets/img/val.png)   |![](/assets/img/maina.png) |![](/assets/img/apo.png)
+
