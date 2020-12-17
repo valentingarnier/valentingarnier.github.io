@@ -30,6 +30,7 @@ Thanks to the check-ins of the people, they have computed approximately their ho
 <iframe src="assets/homes_map.html" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
+
 #### ***Vizualize the pattern of how do the possible guilties move over the world***
 
 Still using the check-ins of the possible guilties, they only kept pairs of check-ins which represents a travel by plane. How did they manage to do that? First they  only kept the one which are less than 1000km from an airport. Then they had to order chronologically all the check-in by person. Finally they kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: they assumed that this threshold is large enough to consider that the person took the plane between them. 
@@ -39,14 +40,17 @@ Still using the check-ins of the possible guilties, they only kept pairs of chec
 Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo
 
 
+
 ### ***Chapter 1.2: Analysis***
 #### ***Analyse which are the top 10 countries to which the possible guilties travel based on their own country***
 
 <iframe src="assets/top10visited.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+
 #### ***Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country***
 
 <iframe src="assets/top10friends.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 
 ### ***Chapter 1.3: Prediction***
 
