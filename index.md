@@ -59,7 +59,18 @@ To do so, they found for each possible guilties the country where they live base
 
 ### ***Chapter 1.3: Prediction***
 
-... notre modele est mauvais
+Here they applied three different classification algorithms for a problem of 3 balanced classes. Since classes are balanced and having false positives or negatives does not impact differently the results, we consider that accuracy is a good measure here of how the algorithms perform.
+
+Predicting at random would yield an accuracy of 33%. Here we obtained an accuracy of 47% which is slightly better than random predictions. This implies that predicting the continent where a user lives is possible using travel patterns over a year, but our data does not mark enough differences between continents. In order to validate if it is possible, we would need more balanced data between continents in the checkins.
+
+
+## About the team
+
+Sherlock Holmes            |  Enola Holmes             | Doctor Watson            |
+:-------------------------:|:-------------------------:|:-------------------------:
+![](/assets/img/val.png)   |![](/assets/img/maina.png) |![](/assets/img/apo.png)
+
+
 
 
 
