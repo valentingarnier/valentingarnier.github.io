@@ -25,7 +25,7 @@ Will this be enough to discover who's the one?
 ### ***Chapitre 1.1: Background***
 #### ***Visualize how the possible guilties are distributed over the world***
 
-Thanks to the check-ins of the people, they have computed approximately their homes, by discretizing the world into 25km2 cells, and taking the average of the check-ins inside the cell which contains most of them. The following picture shows all of them, with a color scale to show better the density: we can see that the two North American coasts as well as Europe and Japan are really dense.
+Thanks to the check-ins of the people, they have computed approximately their homes, by discretizing the world into 25km2 cells, and taking the average of the check-ins inside the cell which contains most of them. The following picture shows all of them, with a color scale to show better the density: we can see that the two North American coasts as well as Europe and Japan are really dense. 
 
 <iframe src="assets/homes_map.html" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -33,13 +33,14 @@ Thanks to the check-ins of the people, they have computed approximately their ho
 
 #### ***Vizualize the pattern of how do the possible guilties move over the world***
 
-Still using the check-ins of the possible guilties, they only kept pairs of check-ins which represents a travel by plane. How did they manage to do that? First they  only kept the one which are less than 1000km from an airport. Then they had to order chronologically all the check-in by person. Finally they kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: they assumed that this threshold is large enough to consider that the person took the plane between them. 
+Still using the check-ins of the possible guilties, they only kept pairs of check-ins which represents a travel by plane. How did they manage to do that? First they  only kept the one which are less than 1000km from an airport. Then they had to order chronologically all the check-in by person. Finally they kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: they assumed that this threshold is large enough to consider that the person took the plane between them. \
+In the following gif, they showed the air trafic according to the different months of the year. We can see that there are severaly big nodes which are mainly in the east North American coast, and in the center of Europe.
 
 ![Alt Text](assets/img/animated-2.gif)
 
-Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo
+Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo + description
 
-
+At this point, Sherlock and his team have a good background of where could live the real guilties and their habits of mobility.
 
 ### ***Chapter 1.2: Analysis***
 #### ***Analyse which are the top 10 countries to which the possible guilties travel based on their own country***
