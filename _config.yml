@@ -14,7 +14,7 @@ author: PIA Team
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Us: "https://github.com/valentingarnier/valentingarnier.github.io/blob/master/aboutus.md"
+  About Us: "/blob/master/aboutus.md"
 
 # --- Logo --- #
 
@@ -157,7 +157,7 @@ date_format: "%B %-d, %Y"
 
 # Output options (more information on Jekyll's site)
 timezone: "America/Toronto"
-markdown: kramdown
+markdown: kraown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
