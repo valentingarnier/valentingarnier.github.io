@@ -67,15 +67,14 @@ Here they applied three different classification algorithms for a problem of 3 b
 
 Predicting at random would yield an accuracy of 33%. Here they obtained an accuracy of 47% which is slightly better than random predictions. This implies that predicting the continent where a user lives is possible using travel patterns over a year, but our data does not mark enough differences between continents. In order to validate if it is possible, they would need more balanced data between continents in the checkins.
 
-<p align="center">
-  ## About the team 
-</p>
 
-<p align="center">
+<center> <h2>About the team </h2> </center>
+
+
 |Sherlock Holmes                              |Enola Holmes                                   |Doctor Watson                             |
 :--------------------------------------------:|:--------------------------------------------:|:-----------------------------------------:
 <img src="/assets/img/val.png" width="120">   |<img src="/assets/img/maina.png" width="120"> |<img src="/assets/img/apo.png" width="120">
 :--------------------------------------------:|:--------------------------------------------:|:-----------------------------------------:
 | Valentin Garnier                            |Maina Orchampt-Mareschal                     |Alexander Apostolov                       |
-</p>
+
    
