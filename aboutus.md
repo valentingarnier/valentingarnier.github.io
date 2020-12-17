@@ -6,6 +6,6 @@ order: 1
 
 ## Members
 
-![](val.png))
-![](maina.png))
-![](apo.png))
+![Sherlock Holmes](val.png))
+![Enola Holmes](maina.png))
+![Doctor Watson](apo.png))
