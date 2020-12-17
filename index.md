@@ -49,6 +49,21 @@ In the following gif, we showed the air trafic according to the different months
   <img src="assets/img/animated-2.gif" alt="animated" />
 </p>
 
+<p align="center">
+  <iframe style="margin:auto;display:block;" src="assets/global_distance_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</p>
+
+<p align="center">
+  <iframe style="margin:auto;display:block;" src="assets/distance_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</p>
+
+<p align="center">
+  <iframe style="margin:auto;display:block;" src="assets/global_number_trips_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</p>
+
+<p align="center">
+  <iframe style="margin:auto;display:block;" src="assets/number_trips_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</p>
 Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo + description
 
 At this point, we have a good background of where could live the real guilties and we know to what looks like the air traffic during those terrible months.
