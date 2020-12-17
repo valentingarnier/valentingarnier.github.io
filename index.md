@@ -27,7 +27,7 @@ Will this be enough to discover who's the one?
 
 Thanks to the check-ins of the people, they have computed approximately their homes, by discretizing the world into 25km2 cells, and taking the average of the check-ins inside the cell which contains most of them. The following picture shows all of them, with a color scale to show better the density: we can see that the two North American coasts as well as Europe and Japan are really dense. 
 
-<iframe src="assets/homes_map.html" width="95%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="assets/homes_map.html" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 
@@ -45,6 +45,7 @@ At this point, Sherlock and his team have a good background of where could live 
 ### ***Chapter 1.2: Analysis***
 #### ***Analyse which are the top 10 countries to which the possible guilties travel based on their own country***
 
+TODO
 
 <iframe src="assets/top10visited.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -59,13 +60,12 @@ To do so, they found for each possible guilties the country where they live base
 
 ### ***Chapter 1.3: Prediction***
 
-Here they applied three different classification algorithms for a problem of 3 balanced classes. Since classes are balanced and having false positives or negatives does not impact differently the results, we consider that accuracy is a good measure here of how the algorithms perform.
+Here they applied three different classification algorithms for a problem of 3 balanced classes. Since classes are balanced and having false positives or negatives does not impact differently the results, they consider that accuracy is a good measure here of how the algorithms perform.
 
-Predicting at random would yield an accuracy of 33%. Here we obtained an accuracy of 47% which is slightly better than random predictions. This implies that predicting the continent where a user lives is possible using travel patterns over a year, but our data does not mark enough differences between continents. In order to validate if it is possible, we would need more balanced data between continents in the checkins.
+Predicting at random would yield an accuracy of 33%. Here they obtained an accuracy of 47% which is slightly better than random predictions. This implies that predicting the continent where a user lives is possible using travel patterns over a year, but our data does not mark enough differences between continents. In order to validate if it is possible, they would need more balanced data between continents in the checkins.
 
 
 ## About the team
-
 
 Sherlock Holmes            |  Enola Holmes             | Doctor Watson            |
 :-------------------------:|:-------------------------:|:-------------------------:
