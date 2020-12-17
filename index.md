@@ -8,7 +8,7 @@ share-img: /assets/img/travels.png
 order: 1
 ---
 
-## ***Introduction***
+## Introduction
 
 Early 2000s, all the front pages of the news papers are covered by the same story: few crimes were commited inside different airports all around the world: John F. Kennedy International Airport, Sydney Kingsford Smith Airport, Cointrin Geneva Airport.. and the list is long. It seems that to achieve some many, the guily has partners. 
 
@@ -20,10 +20,10 @@ To solve it, they dispose of the check-ins and the contacts of all the people wh
 
 Will this be enough to discover who's the one?
 
-## ***How Sherlock and his team has proceeded to solve the mystery***
+## How Sherlock and his team has proceeded to solve the mystery
 
-### ***Background***
-#### ***Visualize how the possible guilties are distributed over the world***
+### Background
+#### Visualize how the possible guilties are distributed over the world
 
 Thanks to the check-ins of the people, they have computed approximately their homes, by discretizing the world into 25km2 cells, and taking the average of the check-ins inside the cell which contains most of them. The following picture shows all of them, with a color scale to show better the density: we can see that the two North American coasts as well as Europe and Japan are really dense. 
 
@@ -34,7 +34,7 @@ Thanks to the check-ins of the people, they have computed approximately their ho
 
 
 
-#### ***Vizualize the pattern of how do the possible guilties move over the world***
+#### Vizualize the pattern of how do the possible guilties move over the world
 
 Still using the check-ins of the possible guilties, they only kept pairs of check-ins which represents a travel by plane. How did they manage to do that? First they  only kept the one which are less than 1000km from an airport. Then they had to order chronologically all the check-in by person. Finally they kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: they assumed that this threshold is large enough to consider that the person took the plane between them. \
 In the following gif, they showed the air trafic according to the different months of the year. We can see that there are severaly big nodes which are mainly in the east North American coast, and in the center of Europe.
@@ -45,15 +45,15 @@ Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo + 
 
 At this point, Sherlock and his team have a good background of where could live the real guilties and to what looks like the air traffic during those terrible months.
 
-### ***Analysis***
-#### ***Analyse which are the top 10 countries to which the possible guilties travel based on their own country***
+### Analysis
+#### Analyse which are the top 10 countries to which the possible guilties travel based on their own country
 
 TODO
 
 <iframe src="assets/top10visited.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
-#### ***Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country***
+#### Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country
 
 Now that we have the top 10 countries to which the possible guilties travel based on their own country, they tought to find some informations about where live the contacts of the possible guilties in order to guess who are the partners in crime of the guilty once they will find it.
 To do so, they found for each possible guilties the country where they live based on their home. Then, thanks to the contact network they have been given, they manage to obtained the top 10 countries where live the contacts of the possible guilties based on their own country. 
@@ -61,7 +61,7 @@ To do so, they found for each possible guilties the country where they live base
 <iframe src="assets/top10friends.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
-### ***Prediction***
+### Prediction
 
 Here they applied three different classification algorithms for a problem of 3 balanced classes. Since classes are balanced and having false positives or negatives does not impact differently the results, they consider that accuracy is a good measure here of how the algorithms perform.
 
