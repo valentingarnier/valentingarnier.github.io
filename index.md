@@ -8,7 +8,7 @@ share-img: /assets/img/travels.png
 order: 1
 ---
 
-## ***Chapter 0: Introduction***
+## ***Introduction***
 
 Early 2000s, all the front pages of the news papers are covered by the same story: few crimes were commited inside different airports all around the world: John F. Kennedy International Airport, Sydney Kingsford Smith Airport, Cointrin Geneva Airport.. and the list is long. It seems that to achieve some many, the guily has partners. 
 
@@ -20,9 +20,9 @@ To solve it, they dispose of the check-ins and the contacts of all the people wh
 
 Will this be enough to discover who's the one?
 
-## ***Chapitre 1: How Sherlock and his team has proceeded to solve the mystery***
+## ***How Sherlock and his team has proceeded to solve the mystery***
 
-### ***Chapitre 1.1: Background***
+### ***Background***
 #### ***Visualize how the possible guilties are distributed over the world***
 
 Thanks to the check-ins of the people, they have computed approximately their homes, by discretizing the world into 25km2 cells, and taking the average of the check-ins inside the cell which contains most of them. The following picture shows all of them, with a color scale to show better the density: we can see that the two North American coasts as well as Europe and Japan are really dense. 
@@ -45,7 +45,7 @@ Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo + 
 
 At this point, Sherlock and his team have a good background of where could live the real guilties and to what looks like the air traffic during those terrible months.
 
-### ***Chapter 1.2: Analysis***
+### ***Analysis***
 #### ***Analyse which are the top 10 countries to which the possible guilties travel based on their own country***
 
 TODO
@@ -61,7 +61,7 @@ To do so, they found for each possible guilties the country where they live base
 <iframe src="assets/top10friends.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
-### ***Chapter 1.3: Prediction***
+### ***Prediction***
 
 Here they applied three different classification algorithms for a problem of 3 balanced classes. Since classes are balanced and having false positives or negatives does not impact differently the results, they consider that accuracy is a good measure here of how the algorithms perform.
 
