@@ -40,15 +40,19 @@ In the following gif, they showed the air trafic according to the different mont
 
 Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo + description
 
-At this point, Sherlock and his team have a good background of where could live the real guilties and their habits of mobility.
+At this point, Sherlock and his team have a good background of where could live the real guilties and to what looks like the air traffic during those terrible months.
 
 ### ***Chapter 1.2: Analysis***
 #### ***Analyse which are the top 10 countries to which the possible guilties travel based on their own country***
+
 
 <iframe src="assets/top10visited.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
 #### ***Analyse which are the top 10 countries where live the contacts of the possible guilties based on their own country***
+
+Now that we have the top 10 countries to which the possible guilties travel based on their own country, they tought to find some informations about where live the contacts of the possible guilties in order to guess who are the partners in crime of the guilty once they will find it.
+To do so, they found for each possible guilties the country where they live based on their home. Then, thanks to the contact network they have been given, they manage to obtained the top 10 countries where live the contacts of the possible guilties based on their own country. \
 
 <iframe src="assets/top10friends.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
