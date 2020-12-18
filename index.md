@@ -66,8 +66,10 @@ Below, we show the top 10 countries according to each metric:
 
 <center>
   <b><u>Top 10 countries flying the biggest distance per year</u></b>
-</center><br>
+</center>
+
 <table align="center">
+  <br>
   <thead>
     <tr>
       <th style="text-align:center">N°</th>
@@ -143,8 +145,10 @@ Below, we show the top 10 countries according to each metric:
 
 <center>
   <b><u>Top 10 countries flying the most trips per year</u></b>
-</center><br>
+</center>
+
 <table align="center">
+  <br>
   <thead>
     <tr>
       <th style="text-align:center">N°</th>
