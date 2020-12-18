@@ -45,7 +45,7 @@ We can observe that there is a bias in the original data, which over-represents 
 
 The data we have at our disposal represents over 10 million check-ins of 1.2 million users from the apps Gowalla and Brightkite. Each check-in represents a time a user has used the app and his or her GPS coordinates were recorded along with a timestamp. We also have the social network of these users. This network represents the friendships between all users.
 
-Thanks to these check-ins, we have estimated their homes, by discretizing the world into 25km<sup>2 cells, and taking the average of the check-ins inside the cell which contains most of them. We do this in two steps as there can be users who have been to multiple places around the world for holidays or work and we do not want to just take the average of all their check-ins. For example, if we just did the global average, a user that lives in Switzerland and has been to a long duration trip in Tahiti for the holidays would have his home estimated somewhere in the ocean around South America. By first taking the cell where the user has been the most, we can then confidently take the average without having too much of a bias. 
+Thanks to these check-ins, we have estimated their homes, by discretizing the world into 25km<sup>2</sup> cells, and taking the average of the check-ins inside the cell which contains most of them. We do this in two steps as there can be users who have been to multiple places around the world for holidays or work and we do not want to just take the average of all their check-ins. For example, if we just did the global average, a user that lives in Switzerland and has been to a long duration trip in Tahiti for the holidays would have his home estimated somewhere in the ocean around South America. By first taking the cell where the user has been the most, we can then confidently take the average without having too much of a bias. 
 
 The following map shows all estimated homes, with a color scale representing their density. Warm colors represent areas with a high density of homes, whereas cold colors represent areas with a scarse density of homes. 
 
@@ -69,7 +69,7 @@ Below we show the distribution of distances between our estimated airports and t
 
 <iframe src="assets/histogram_distances_airports.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-We see that our estimation works well, indeed most check-ins before and after a long distance trip are usually close to airports. However we see there are some outliers after 1000<sub>km</sub> which are very far from airports for their long-distance trips. After analyzing those we realize they are mainly a few trips to really remote part of the world such as Antarctica and the Arctic and some remote islands without large airports. Because these represent only a small proportion of detected trips, we safely ignore them.
+We see that our estimation works well, indeed most check-ins before and after a long distance trip are usually close to airports. However we see there are some outliers after 1000km which are very far from airports for their long-distance trips. After analyzing those we realize they are mainly a few trips to really remote part of the world such as Antarctica and the Arctic and some remote islands without large airports. Because these represent only a small proportion of detected trips, we safely ignore them.
 
 After doing this we get the information for 24'243 trips made by plane between 606 airports worldwide.
 
