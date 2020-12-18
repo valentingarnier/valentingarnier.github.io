@@ -66,9 +66,7 @@ Below, we show the top 10 countries according to each metric:
 
 <center>
   <b><u>Top 10 countries flying the biggest distance per year</u></b>
-</center>
-
-
+</center><br>
 <table align="center">
   <thead>
     <tr>
@@ -145,9 +143,7 @@ Below, we show the top 10 countries according to each metric:
 
 <center>
   <b><u>Top 10 countries flying the most trips per year</u></b>
-</center>
-
-
+</center><br>
 <table align="center">
   <thead>
     <tr>
@@ -414,8 +410,8 @@ TODO
 
 ### Analyse which are the top 10 countries where live the contacts of the people based on their own country
 
-Now that we have the top 10 countries to which the possible guilties travel based on their own country, we tought to find some informations about where live the contacts of the possible guilties in order to guess who are the partners in crime of the guilty once they will find him.
-To do so, we found for each person the country where he lives based on his home. Then, thanks to the contact network we have, we manage to obtained the top 10 countries where live their contacts based on their own country. 
+Until now we focused mainly on the mobility of the people. To expand a bit our research domain we want to analyse what are the friendships’ relations between the people of the different countries based on the two networks we have. To do so, once having the home of every user from which we found the associated country, we were able to identify the degree of friendship between a country and the others. To show the most significant results, we chose to only take the ten top friends’ countries for each country.
+As stated before, the results needs to be taken carefully because of the significant bias it has in favour of North America: unfortunately, most of the countries has a really small percentage of friendships inside itself or even don’t appear at all inside their own top ten which seem very unreal. Instead, in the case of the United States, it seems that the findings are rather good as we obtain the majority of friends inside itself (70.81%) following by the United Kingdom and the Canada which are both english-speaking countries.
 
 <iframe src="assets/top10friendships.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -435,9 +431,7 @@ We can observe a link between patterns and continents, so we now try to use mach
 Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 81.6%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
 
 
-<center> <h2>About the team </h2> </center>
-
-
+<center> <h2>About the team </h2> </center><br>
 <table align="center">
   <thead>
     <tr>
