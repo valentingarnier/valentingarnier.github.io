@@ -405,19 +405,20 @@ In the table above when the airport has a high betweeness score, it is one of th
 
 ### Top 10 visited countries from each country
 
-TODO
+We now want to see what are the top destinations that are visited by plane from users of each country. To answer this question we need to be careful and not include return trips of users as this would just over-represent the home country. We still consider domestic flights as these can be made to visit a different place of the same country. Below we show the top 10 most visited countries for each country.
 
 <iframe src="assets/top10visited.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+We notice some interesting trends. First, most of the plane trips are made domestically for large enough countries (US, Russia, Brazil, China, Australia...). Second, people from countries in Europe travel mostly to European destinations. Lastly, we see that language plays a crucial role in the choice of destinations, countries speaking the same language tend to travel to eachother. For example english speaking countries such as Great Britain, The United States, Canada and Australia are in eachother's most visited destinations. The same pattern can be observed with Latin American countries and Spain and with Portugal and Brazil.
 
-### Top 10 countries with friends of each country 
+### Top 10 friends' countries of each country 
 
 Until now we mainly focused on the mobility of people. To expand our research domain we want to analyse what are the friendships’ relations between users of different countries based on the two friendship network we have available. To do so, we check all the friends for all users of each country, this way we are able to identify the degree of friendship between any pair of countries. To show the most significant results, we choose to only take the ten top friends’ countries for each country.
 
 <iframe src="assets/top10friendships.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-As stated before, the results needs to be taken carefully because of the significant bias it has in favour of North America. 
-Unfortunately, most of the countries have a really small percentage of friendships inside themselves or even don’t appear at all inside their own top ten which seem very unreal. Instead, in the case of the United States, it seems that the findings are rather good as we obtain the majority of friends inside itself (70.81%) following by the United Kingdom and the Canada which are both english-speaking countries.
+As stated before, the results needs to be taken carefully because of the significant bias in favour of North America. 
+Unfortunately, we can see that most of the countries have unexpected data for their friendships. Indeed it would be realistic that most friends of people living in a country are also from the same country. However, many countries seem to have the majority of their friends in the US. The reason for this might be that the data from the apps Gowalla and Brightkite does not reflect the actual distribution of friendships. We are only confident with the data presented in the case of the United States, as we obtain the majority of friends inside the country (70.81%) followed by friendships in the United Kingdom and Canada which are both english-speaking countries. For the case of the US it seems that there is a corrolation between visited countries and countries with friends of people living in the US, but since we are not onfident with the friendship data of other countries we cannot investigate this further and give clear results.
 
 ### Prediction
 
@@ -431,7 +432,7 @@ As we have a lot of dimensions of informations for each user we use a common tec
 
 We can observe a link between patterns and continents, so we now try to use machine learning techniques to predict the desired result.
 
-Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 81.6%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
+Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 81.2%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
 
 
 <center> 
