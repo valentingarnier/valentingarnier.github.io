@@ -60,7 +60,7 @@ Now that we have detected plane travels, we want to see which countries have res
 Below, we show the top 10 countries according to each metric:
 
 
-  Top 10 countries flying the biggest distance per year
+<u>**Top 10 countries flying the biggest distance per year**<\u>
 
 |N°   |Country          | Travelled distance over a year| GDP per capital ranking (IMF)  |
 |:---:|:---------------:|:-----------------------------:|:------------------------------:|
@@ -76,7 +76,7 @@ Below, we show the top 10 countries according to each metric:
 |  10 | Australia       | 4'919                         | 10                             |
 
 
-  Top 10 countries flying the most trips per year
+ <u>**Top 10 countries flying the most trips per year**<\u>
 
 |N°   |Country          | Average number of trips over a year| GDP per capital ranking (IMF)  |
 |:---:|:---------------:|:----------------------------------:|:------------------------------:|
