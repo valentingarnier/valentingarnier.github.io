@@ -435,6 +435,7 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
 <center> <h2>About the team </h2> </center><br>
 <table align="center">
   <thead>
+    <caption>The team</caption>
     <tr>
       <th style="text-align:center">Sherlock Holmes</th>
       <th style="text-align:center">Enola Holmes</th>
