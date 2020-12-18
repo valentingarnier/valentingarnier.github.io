@@ -62,7 +62,6 @@ Below, we show the top 10 countries according to each metric:
 <p align="center">
   Top 10 countries flying the biggest distance per year
 
-
 |N°   |Country          | Travelled distance over a year| GDP per capital ranking (IMF)  |
 |:---:|:---------------:|:-----------------------------:|:------------------------------:|
 |  1  | Sweden          | 21'537                        | 12                             |
@@ -80,7 +79,6 @@ Below, we show the top 10 countries according to each metric:
 
 <p align="center">
   Top 10 countries flying the most trips per year
-
 
 |N°   |Country          | Average number of trips over a year| GDP per capital ranking (IMF)  |
 |:---:|:---------------:|:----------------------------------:|:------------------------------:|
