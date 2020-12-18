@@ -64,7 +64,7 @@ Below, we show the top 10 countries according to each metric:
 </p>
 
 |N°   |Country          | Travelled distance over a year| GDP per capital ranking (IMF)  |
-:---------------------------------------------------------------------------------------:|
+|:---:|:---------------:|:-----------------------------:|:------------------------------:|
 |  1  | Sweden          | 21'537                        | 12                             |
 |  2  | Singapor        | 10'064                        | 6                              |
 |  3  | Switzerland     | 8'903                         | 2                              |
@@ -81,7 +81,7 @@ Below, we show the top 10 countries according to each metric:
 </p>
 
 |N°   |Country          | Average number of trips over a year| GDP per capital ranking (IMF)  |
-:--------------------------------------------------------------------------------------------:|
+|:---:|:---------------:|:----------------------------------:|:------------------------------:|
 |  1  | Sweden          | 10.1                               | 12                             |
 |  2  | Norway          | 3.8                                | 4                              |
 |  3  | Switzerland     | 3.1                                | 2                              |
