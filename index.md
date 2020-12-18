@@ -141,12 +141,13 @@ Below, we show the top 10 countries according to each metric:
     </tr>
   </tbody>
 </table>
-<br></br>
+<br>
 
 <center>
   <b><u>Top 10 countries flying the most trips per year</u></b>
 </center>
-<br></br>
+
+
 <table align="center">
   <thead>
     <tr>
@@ -271,10 +272,7 @@ We now would like to see how the airports are connected amongst themselves. The 
 We are now interested to see what are the top 10 most important airports. For this we will use two metrics.  
 First we look at the most connected airports, i.e. the airports from which you can reach the most other airports:
 
-<center>
-  **<u>Top 10 countries flying the most trips per year</u>**
-</center>
-<br></br>
+
 <table align="center">
   <thead>
     <tr>
@@ -438,7 +436,8 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
 
 
 <center> <h2>About the team </h2> </center>
-<br></br>
+
+
 <table align="center">
   <thead>
     <tr>
