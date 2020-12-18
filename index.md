@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Analyzing travel patterns
-subtitle: Analyzing long distance plane travel and predicting user home area based on their long distance travels
+subtitle: Analyzing plane travels and predicting people's home area based on their flight patterns
 cover-img: /assets/img/travels.png
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/travels.png
@@ -21,6 +21,10 @@ Fortunately, the team has taken the ADA course from EPFL and they have a large c
 Will this be enough to discover who's the one?
 
 ## How Sherlock and his team (we) have proceeded to solve the mystery
+
+### Goals
+
+### Key findings
 
 ### Data at our disposal
 
@@ -51,6 +55,8 @@ Below we show the distribution of distances between our estimated airports and t
 <iframe src="assets/histogram_distances_airports.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 We see that our estimation works well, indeed most check-ins before and after a long distance trip are usually close to airports. However we see there are some outliers after 1000km which are very far from airports for their long-distance trips. After analyzing those we realize they are mainly a few trips to really remote part of the world such as Antarctica and the Arctic and some remote islands without large airports. Because these represent only a small proportion of detected trips we safely ignore them.
+
+After doing this we get the information for 24'243 trips made by plane between 606 airports worldwide.
 
 ### Which countries travel the most?
 
@@ -133,6 +139,47 @@ The trend we observe here is very similar to the one for the flown distance, mea
 </p>
 
 As one coud expect, we see the same trend appearing for the number of travels. 
+
+### Analysis of the gloabal network of airports
+
+We now would like to see how the airports are connected amongst themselves. The 602 form a graph which is interesting to analyze. First we note that all airports form one connected component, this means that it is possible from any airport to reach any other airport on the world. It is sometimes needed to go through other airports but it is always possible. We do not have a scenario where some subset of airports are fully separated from the rest. We use different metrics to measure how well tight the airports are. We see that the average shortest path between two airports is 1.96. This means that going from any airport A to any airport B on the globe takes on average just below two trips. 
+
+We are now interested to see what are the top 10 most used airports. For this we will use two metrics.  
+First we look at the most connected airports, i.e. the airports from which you can reach the most other airports:
+
+ **<u>Top 10 countries flying the most trips per year</u>**
+
+|N°   |Airport (Country)                            | Connected to |
+|:---:|:-------------------------------------------:|:------------:|
+|  1  | La Guardia (US)                             | 404          |
+|  2  | London Heathrow (GB)                        | 379          |
+|  3  | San Francisco International (US)            | 361          |
+|  4  | Los Angeles International (US)              | 359          |
+|  5  | Denver International (US)                   | 343          |
+|  6  | Stockholm-Arlanda (SW)                      | 331          |
+|  7  | Norman Y. Mineta San Jose International (US)| 328          |
+|  8  | Metropolitan Oakland International (US)     | 323          |
+|  9  | Austin Bergstrom International (US)         | 312          |
+|  10 | Tokyo Haneda International (JP)             | 290          |
+
+We see that each one of the three big clusters we entionned in air traffic (Nort America, Europe and Eastern Asia) has at least one airport that is really well connected to the rest of the network. We note that the is the country with the most connected airports.
+
+Then we look at the betweeness of airports, this measure tells us which airports are used the most often to travel between any two random airports worldwide. Airports in the following list are the most frequently used when travelling between two airports with the least amounts of layovers:
+
+|N°   |Airport (Country)                             | Betweeness score |
+|:---:|:--------------------------------------------:|:----------------:|
+|  1  | London Heathrow (GB)                         | 0.044            |
+|  2  | La Guardia (US)                              | 0.039            |
+|  3  | Stockholm-Arlanda (SW)                       | 0.031            |
+|  4  | Los Angeles International (US)               | 0.027            |
+|  5  | San Francisco International (US)             | 0.025            |
+|  6  | Tokyo Haneda International (JP)              | 0.025            |
+|  7  | Denver International (US)                    | 0.022            |
+|  8  | Norman Y. Mineta San Jose International (US) | 0.022            |
+|  9  | Austin Bergstrom International (US)          | 0.016            |
+|  10 | Paris-Orly (FR)                              | 0.016            |
+
+In the table above when the airport has a high betweeness score, it is used a lot in routes between other airports. Not surprisingly, we see that most of the airport that have a very high betweeness score are also some of the most connected. We also see that each of the three clusters are represented in this table.
 
 
 ### Analyse which are the top 10 countries to which people travels based on their own country
