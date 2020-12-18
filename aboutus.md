@@ -110,3 +110,81 @@ order: 1
 </table>
 
 
+******** deuxieme tableau pays / gdp*********
+
+<table align="center">
+  <thead>
+    <tr>
+      <th style="text-align:center">N°</th>
+      <th style="text-align:center">Country</th>
+      <th style="text-align:center">Travelled distance over a year</th>
+      <th style="text-align:center">GDP per capita ranking (IMF)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">Sweden</td>
+      <td style="text-align:center">10.1</td>
+      <td style="text-align:center">12</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">2</td>
+      <td style="text-align:center">Norway</td>
+      <td style="text-align:center">3.8</td>
+      <td style="text-align:center">4</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">3</td>
+      <td style="text-align:center">Switzerland</td>
+      <td style="text-align:center">3.1</td>
+      <td style="text-align:center">2</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">4</td>
+      <td style="text-align:center">United States</td>
+      <td style="text-align:center">2.6</td>
+      <td style="text-align:center">5</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">5</td>
+      <td style="text-align:center">Austria</td>
+      <td style="text-align:center">2.5</td>
+      <td style="text-align:center">13</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">6</td>
+      <td style="text-align:center">Belgium</td>
+      <td style="text-align:center">2.4</td>
+      <td style="text-align:center">16</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">7</td>
+      <td style="text-align:center">Singapor</td>
+      <td style="text-align:center">2.2</td>
+      <td style="text-align:center">6</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">8</td>
+      <td style="text-align:center">Germany</td>
+      <td style="text-align:center">1.9</td>
+      <td style="text-align:center">7</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">9</td>
+      <td style="text-align:center">Denmark</td>
+      <td style="text-align:center">1.8</td>
+      <td style="text-align:center">7</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">10</td>
+      <td style="text-align:center">Mexico</td>
+      <td style="text-align:center">1.7</td>
+      <td style="text-align:center">71</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
