@@ -186,5 +186,67 @@ order: 1
 </table>
 
 
+******** premier tableau airports *********
 
+<table align="center">
+  <thead>
+    <tr>
+      <th style="text-align:center">N°</th>
+      <th style="text-align:center">Airport (Country)</th>
+      <th style="text-align:center">Betweeness score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center">1</td>
+      <td style="text-align:center">London Heathrow (GB)</td>
+      <td style="text-align:center">0.044</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">2</td>
+      <td style="text-align:center">La Guardia (US)</td>
+      <td style="text-align:center">0.039</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">3</td>
+      <td style="text-align:center">Stockholm-Arlanda (SW)</td>
+      <td style="text-align:center">0.031</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">4</td>
+      <td style="text-align:center">Los Angeles International (US)</td>
+      <td style="text-align:center">0.027</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">5</td>
+      <td style="text-align:center">San Francisco International (US)</td>
+      <td style="text-align:center">0.025</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">6</td>
+      <td style="text-align:center">Tokyo Haneda International (JP)</td>
+      <td style="text-align:center">0.025</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">7</td>
+      <td style="text-align:center">Denver International (US)</td>
+      <td style="text-align:center">0.022</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">8</td>
+      <td style="text-align:center">Norman Y. Mineta San Jose International (US)</td>
+      <td style="text-align:center">0.022</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">9</td>
+      <td style="text-align:center">Austin Bergstrom International (US)</td>
+      <td style="text-align:center">0.016</td>
+    </tr>
+    <tr>
+      <td style="text-align:center">10</td>
+      <td style="text-align:center">Paris-Orly (FR)</td>
+      <td style="text-align:center">0.016</td>
+    </tr>
+  </tbody>
+</table>
 
