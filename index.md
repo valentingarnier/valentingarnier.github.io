@@ -475,13 +475,13 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
       <td><img src="/assets/img/val.png" width="120"></td>
    </tr>
   </tbody>
-  <tbody>
+  <tfoot>
     <tr>
       <td style="text-align:center">Alexander Apostolov</td>
       <td style="text-align:center">Maina Orchampt-Mareschal</td>
       <td style="text-align:center">Valentin Garnier</td>
    </tr>
-  </tbody>
+  </tfoot>
 </table>              
 
  
