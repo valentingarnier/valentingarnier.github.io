@@ -62,7 +62,7 @@ Below, we show the top 10 countries according to each metric:
 
 **<u>Top 10 countries flying the biggest distance per year</u>**
 
-|N°   |Country          | Travelled distance over a year| GDP per capital ranking (IMF)  |
+|N°   |Country          | Travelled distance over a year| GDP per capita ranking (IMF)   |
 |:---:|:---------------:|:-----------------------------:|:------------------------------:|
 |  1  | Sweden          | 21'537                        | 12                             |
 |  2  | Singapor        | 10'064                        | 6                              |
@@ -78,7 +78,7 @@ Below, we show the top 10 countries according to each metric:
 
  **<u>Top 10 countries flying the most trips per year</u>**
 
-|N°   |Country          | Average number of trips over a year| GDP per capital ranking (IMF)  |
+|N°   |Country          | Average number of trips over a year| GDP per capita ranking (IMF)   |
 |:---:|:---------------:|:----------------------------------:|:------------------------------:|
 |  1  | Sweden          | 10.1                               | 12                             |
 |  2  | Norway          | 3.8                                | 4                              |
@@ -92,7 +92,7 @@ Below, we show the top 10 countries according to each metric:
 |  10 | Mexico          | 1.7                                | 71                             |
 
 
-
+We notice something interesting when looking at the tables above, most present countries are also in the top 20 of GDP per capita according to the International Monetary Fund (IMF). This illustrates a correlation between the their economic well-being and their capacity to travel by plane. However, there are some outliers, in the first table we see that people living in The Philliines, even though they are ranked low in GDP per capita, are flying a lot of milleage. This is not surprising since their country is made of 7'000 islands in the ocean, so every time they travel they need to cross the waters around them in order to reach any destination. This intrinsic way of travelling will naturally increase the flown distance more rapidely than a landlock country such as Switzerland, even though they travel a bit less frequently (N° 14 in most trips per year). We also see that people living in China, are not in the top travellers by number of flights (N°15  in most trips per year) but tend to fly further,  similarly to people from The Philippines. The average Chinese user is thus flying less frequently but further. For Mexico, we see the opposite trend, they fly more frequently but shorter distances (N° 20 in furtest distance by year). This might be due to the fact that their country is large enough so that they take short domestic flights which are cheaper than long international flights.
 
 #### Vizualize the pattern of how people move over the world
 
