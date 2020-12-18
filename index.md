@@ -463,9 +463,9 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
   <br>
   <thead>
     <tr>
-      <th style="text-align:center">Sherlock Holmes</th>
-      <th style="text-align:center">Enola Holmes</th>
-      <th style="text-align:center">Doctor Watson</th>
+      <td align="center">Sherlock Holmes</th>
+      <td align="center">Enola Holmes</th>
+      <td align="center">Doctor Watson</th>
     </tr>
   </thead>
   <tbody>
