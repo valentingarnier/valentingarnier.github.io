@@ -20,7 +20,9 @@ Fortunately, the team has taken the ADA course from EPFL and they have a large c
 
 Will this be enough to discover who's the one?
 
-## How Sherlock and his team (we) have proceeded to solve the mystery
+Here is their analysis.
+
+## How can we proceeded to solve the mystery
 
 ### Goals
 
