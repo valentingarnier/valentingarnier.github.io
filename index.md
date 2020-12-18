@@ -44,9 +44,19 @@ The results we state should thus be taken with a grain of salt.
 
 #### How to detect plane travels 
 
+We now want to detect plane travels from the check-ins we have. To do so we look at all the check-ins of each user and consider all pairs of consecutive check-ins that are far enough as a plane trip. An important parameter we need to consider is what distance to use as a threshold to determine if two check-ins are distant enough. After trying different values we decide to use 500km as minimum distance. Indeed, we think that it is really likely that a majority of trips longer than this are done by plane. 
+To make our analysis even more precise we decide to detect the airports used at the beginning and end of each trip. To do so we take a list of all airports in the world and determine the closest one to the each check-in right before and after the detected long-distance trips. As our list of airports contains very precise data (airports, small airports, aerodromes, heliports, military bases, etc...) we decide to only consider large airports as these are the ones used by most commercial airline companies for their regular trips.  
+
+Below we show the distribution of distances between our estimated airports and the check-ins that happen just before and after a trip.
+
+<iframe src="assets/histogram_distances_airports.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+We see that our estimation works well, indeed most check-ins before and after a long distance trip are usually close to airports. However we see there are some outliers after 1000km which are very far from airports for their long-distance trips. After analyzing those we realize they are mainly a few trips to really remote part of the world such as Antarctica and the Arctic and some remote islands without large airports. Because these represent only a small proportion of detected trips we safely ignore them.
+
 #### Vizualize the pattern of how people move over the world
 
-Still using the check-ins of the possible guilties, we only kept pairs of check-ins which represents a travel by plane. To do so, firsty we only kept the one which are less than 1000km from an airport. Then we had to order chronologically all the check-in by person. Finally we kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: we assumed that this threshold is large enough to consider that the person took the plane between them. \
+Still using the check-ins of the possible guilties, we only kept pairs of check-ins which represents a travel by plane. To do so, firsty we only kept the one which are less than 1000km from an airport. Then we had to order chronologically all the check-in by person. Finally we kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: we assumed that this threshold is large enough to consider that the person took the plane between them.
+
 In the following gif, we showed the air trafic according to the different months of the year. We can see that there are severaly big nodes which are mainly in the east North American coast, and in the center of Europe.
 
 <p align="center">
