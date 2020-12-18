@@ -239,7 +239,7 @@ We notice something interesting when looking at the tables above, most present c
 
 ## Flight patterns over time
 
-We now want to see how these two metrics evolve throughout the year. We look at the variation between months of the year in this section.
+We now want to see how these two metrics evolve throughout the year. We look at the variations between months of the year in this section.
 
 First, we show the following GIF that depicts all airports and the number of flights connecting them throughout a year. The darker the link between them, the more connected the airports for the given month.
 
@@ -250,13 +250,13 @@ First, we show the following GIF that depicts all airports and the number of fli
 We can see that there are three big clusters for the global air traffic: North America, Europe and Eastern Asia. The airports in these clusters are strongly connected among themselves and the three big clusters are also well connected with eachother. This network can thus be considered as one with three big communities that are very dense and that are connected with so called *weak ties* which are significant.  
 We also notice some varying trends throughout the year. It seems that there is more traffic in January and during the summer, but to be more certain about this claim we make a more granular analysis.
 
-We first look at the distance travelled by month. The following bar plot shows how an average user travels throughout the year. We should note that this might be a bit biased towards the US as it is the country with the most users.
+We first look at the distance travelled by month. The following bar plot shows how an average user travels throughout the year. We should note that this might be a bit biased towards the US as it is the country with most users.
 
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/global_distance_travelled.html" width="60%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
-We see that there is a significant increase in flown distances between May and October as we saw in the animation above. This might be explained because it is usually a time of the year when lot of people we have represented in the data (North America and Europe) have summer holidays and thus the time to go on longer trips further. However we do not see the increase of traffic in January on this global trend. To look into more details we analyse the trend per country:
+We see that there is a significant increase in flown distances between May and October as we saw in the animation above. This might be explained because it is usually a time of the year when lot of people we have represented in the data (North America and Europe) have summer holidays and consequently the time to go on longer trips further. However we do not see the increase of traffic in January on this global trend. To look into more details we analyse the trend per country:
 
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/distance_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -270,7 +270,7 @@ We now do the same analysis for the number of trips. We first show the global tr
   <iframe style="margin:auto;display:block;" src="assets/global_number_trips_travelled.html" width="60%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
-The trend we observe here is very similar to the one for the flown distances, meaning that the periods when users travel further are the same ones as the periods when users travel frequently. To see if we also observe a North/South divide we show the data per country:
+The trend we observe here is very similar to the one for the flown distances, meaning that the periods when users travel further are the same as the periods when users travel frequently. To see if we also observe a North/South divide we show the data per country:
 
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/number_trips_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -350,14 +350,14 @@ First we look at the most connected airports, i.e. the airports with the highest
 
 We see that each one of the three big clusters we mentioned earlier (Nort America, Europe and Eastern Asia) in the air traffic animation has at least one airport that is really well connected to the rest of the network. We note that the United States is the country with the most connected airports.
 
-Then we look at the betweeness of airports, this measure tells us which airports are used the most often to travel between any two random airports worldwide. 
+Then we look at the betweenness of airports, this measure tells us which airports are used the most often to travel between any two random airports worldwide. 
 
 <table align="center">
   <thead>
     <tr>
       <th style="text-align:center">N°</th>
       <th style="text-align:center">Airport (Country)</th>
-      <th style="text-align:center">Betweeness score</th>
+      <th style="text-align:center">betweenness score</th>
     </tr>
   </thead>
   <tbody>
@@ -415,7 +415,7 @@ Then we look at the betweeness of airports, this measure tells us which airports
 </table>
 
 
-In the table above when the airport has a high betweeness score, it is one of the most frequently used when travelling between two airports with the least amounts of layovers. Not surprisingly, we see that most of the airports that have a very high betweeness score are also some of the most connected. We also see that each of the three clusters are represented in this table.
+In the table above when the airport has a high betweenness score, it is one of the most frequently used when travelling between two airports with the least amounts of layovers. Not surprisingly, we see that most of the airports that have a very high betweenness score are also some of the most connected. We also see that each of the three clusters are represented in this table.
 
 
 ## Top 10 visited countries from each country
@@ -428,17 +428,17 @@ We notice some interesting trends. First, most of the plane trips are made domes
 
 ## Top 10 friends' countries of each country 
 
-Until now we mainly focused on the mobility of people. To expand our research domain we want to analyse what are the friendships’ relations between users of different countries based on the two friendship networks we have available. To do so, we check all the friends for all users of each country, this way we are able to identify the degree of friendship between any pair of countries. To show the most significant results, we choose to only take the top ten friends’ countries for each country.
+Until now we mainly focused on the mobility of people. To expand our research domain we want to analyse what are the friendships’ relations between users of different countries based on the two friendship networks we have at our disposal. To do so, we check all the friends for all users of each country, this way we are able to identify the degree of friendship between any pair of countries. To show the most significant results, we choose to only take the top ten friends’ countries for each country.
 
 <iframe src="assets/top10friendships.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-As stated before, the results needs to be taken carefully because of a bias in favour of North America. 
+As stated before, the results need to be taken carefully because of a bias in favour of North America. 
 
 Unfortunately, we can see that most of the countries have unexpected data for their friendships. Indeed it would be realistic that most friends of people living in a country are also from the same country. However, many countries seem to have the majority of their friends in the US. The reason for this might be that the data from the apps Gowalla and Brightkite does not reflect the actual distribution of friendships. We are only confident with the data presented in the case of the United States, as we obtain the majority of friends inside the country (70.81%) followed by friendships in the United Kingdom and Canada which are both english-speaking countries. When overlooking percentages for other countries, we can see that there seems to be an overlap between most visited destinations and countries with most friends. However, we would need more data about global friendships to confirm this trend.
 
 ## Predicting home areas 
 
-Finally, we check if it is possible to infer people’s home areas based on their flight patterns. Predicting the country home area is quite difficult because we have not enough data, and too much bias in it. In order to be more global, we decide to predict if a user lives in North America, Europe or Asia, the three most represented continents. For each continent, we picked users that travel the most so that they represent the most their home area, as some users of the app are not well presented in the flight data, as they might not have used it while travelling. 
+Finally, we check if it is possible to infer people’s home areas based on their flight patterns. Predicting the country home area is quite difficult because we have not a lot of data, and too much bias in it. In order to be more global, we decide to predict if a user lives in North America, Europe or Asia, the three most represented continents. For each continent, we picked users that travel the most so that they represent the most their home area, as we see that some users of the apps don't have a lot of logged data and we are probably missing their travels. 
 
 Because we have a lot of dimensions of information for each user we use a common technique called [PCA](https://en.wikipedia.org/wiki/Principal_component_analysis) to reduce these dimensions to only two significant ones so we can plot the data and see how the three groups are spread.
 
@@ -448,7 +448,7 @@ Because we have a lot of dimensions of information for each user we use a common
 
 We can observe a link between patterns and continents, so we now try to use Machine Learning techniques to predict the desired result.
 
-Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 80.4%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
+Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 80.4%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
 
 ## Conclusion
 
@@ -457,7 +457,7 @@ We performed an analysis on data on human mobility to get insight on the travels
 This analysis can help for the mysterious murders in the following way:
 - Focusing on the most central airports stated above could help in finding the criminal.
 - If the home country of the murderer is known, we can reduce the list of destinations to the top 10 visited ones and to the time of the year when there are more travels.
-- On the contrary, if the home country is unknown but we have travels data, we can use the prediction model to estimate the home country of the criminal.
+- On the contrary, if the home country is unknown but we have travel data, we can use the prediction model to estimate the home country of the criminal.
 
 
 <center> 
