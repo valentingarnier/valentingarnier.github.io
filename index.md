@@ -65,9 +65,10 @@ Now that we have detected plane travels, we want to see which countries have res
 Below, we show the top 10 countries according to each metric:
 
 <center>
-  **<u>Top 10 countries flying the biggest distance per year</u>**
+  <b><u>Top 10 countries flying the biggest distance per year</u></b>
 </center>
-  
+
+
 <table align="center">
   <thead>
     <tr>
@@ -86,7 +87,7 @@ Below, we show the top 10 countries according to each metric:
     </tr>
     <tr>
       <td style="text-align:center">2</td>
-      <td style="text-align:center">Singapor</td>
+      <td style="text-align:center">Singapore</td>
       <td style="text-align:center">10&#39;064</td>
       <td style="text-align:center">6</td>
     </tr>
@@ -140,11 +141,12 @@ Below, we show the top 10 countries according to each metric:
     </tr>
   </tbody>
 </table>
+<br></br>
 
 <center>
-  **<u>Top 10 countries flying the most trips per year</u>**
+  <b><u>Top 10 countries flying the most trips per year</u></b>
 </center>
-
+<br></br>
 <table align="center">
   <thead>
     <tr>
@@ -193,7 +195,7 @@ Below, we show the top 10 countries according to each metric:
     </tr>
     <tr>
       <td style="text-align:center">7</td>
-      <td style="text-align:center">Singapor</td>
+      <td style="text-align:center">Singapore</td>
       <td style="text-align:center">2.2</td>
       <td style="text-align:center">6</td>
     </tr>
@@ -272,8 +274,8 @@ First we look at the most connected airports, i.e. the airports from which you c
 <center>
   **<u>Top 10 countries flying the most trips per year</u>**
 </center>
-
-<table>
+<br></br>
+<table align="center">
   <thead>
     <tr>
      <th style="text-align:center">N°</th>
@@ -436,7 +438,7 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
 
 
 <center> <h2>About the team </h2> </center>
-
+<br></br>
 <table align="center">
   <thead>
     <tr>
