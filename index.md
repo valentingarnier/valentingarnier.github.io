@@ -53,6 +53,18 @@ Below we show the distribution of distances between our estimated airports and t
 
 We see that our estimation works well, indeed most check-ins before and after a long distance trip are usually close to airports. However we see there are some outliers after 1000km which are very far from airports for their long-distance trips. After analyzing those we realize they are mainly a few trips to really remote part of the world such as Antarctica and the Arctic and some remote islands without large airports. Because these represent only a small proportion of detected trips we safely ignore them.
 
+#### Which countries travel the most?
+
+Now that we have detected plane travels, we want to see which countries have residents travelling the most. As this question can be interpreted differently, we will use two metrics, travelled distance and number of flights to be as thorough as possible. To have comparable data, we normalize it temporally to have the flown distance and number of flights over a year and then we divide the results by the amount of users per country, so that our metrics correspond to an average year for an average user of each country.
+
+Below, we show the top 10 countries according to each metric:
+
+| Top 10 countries flying the biggest distance per year|
+:-----------------------------------------------------:|
+|![](/assets/img/apo.png)  |![](/assets/img/maina.png) |
+| Alexander Apostolov      | Maina Orchampt-Mareschal  |  
+
+
 #### Vizualize the pattern of how people move over the world
 
 Still using the check-ins of the possible guilties, we only kept pairs of check-ins which represents a travel by plane. To do so, firsty we only kept the one which are less than 1000km from an airport. Then we had to order chronologically all the check-in by person. Finally we kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: we assumed that this threshold is large enough to consider that the person took the plane between them.
