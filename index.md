@@ -8,8 +8,6 @@ share-img: /assets/img/travels.png
 order: 1
 ---
 
-## Introduction
-
 Early 2000s, all the front pages of the news papers are covered by the same story: crimes are commited different airports all around the world: John F. Kennedy International Airport, Sydney Kingsford Smith Airport, Cointrin Geneva Airport.. and the list is long. It seems some criminal dark mind is flying around the world to murder people. 
 
 It has been months now that the first crimes have been comitted and that the tragedies continue. People start being scared to take planes and the airline companies are worrying about their futur. 
@@ -22,9 +20,9 @@ Will this be enough to discover who's the one?
 
 Here is their analysis.
 
-## How can we proceeded to solve the mystery
+# How can we use data to help solving the case
 
-### Goals
+## Goals
 
 We build up on the analysis of the paper *Friendship and Mobility: User Movement in Location-Based Social Networks* by E. Cho, S. Myers and J. Leskovec which analyses the mobility of people and tries to unravel connections between movement and friends. Here we want to analyze more precisely the long-distance travels by plane using the data and some methods from the paper. Our main goals are to:
 - Find which countries travel the most.
@@ -34,7 +32,7 @@ We build up on the analysis of the paper *Friendship and Mobility: User Movement
 - See if there is a conection between friends and visited countries.
 - Check if it is possible to predict home areas based on travel patterns.
 
-### Key findings
+## Key findings
 We can observe that there is a bias in the original data, which over-represents users from similar countries and maily the US. Then we see that:
 - People that travel the most are usually from countries with the largest GDP per capita.
 - We notice that traffic intensifies in different periods of the year according to the hemisphere in which a country lies. 
@@ -43,7 +41,7 @@ We can observe that there is a bias in the original data, which over-represents 
 - The friendships' data is very biased towards the United States and no correlation can be detected safely.
 - We manage to predict the continent (North America, Europe or Asia) of a user based on his travel patterns with an accuracy of 81%.
 
-### Data at our disposal
+## Data at our disposal
 
 The data we have at our disposal represents over 10 million check-ins of 1.2 million users of the apps Gowalla and Brightkite. Each check-in represents a time a user has used the app and his or her GPS coordinates were recorded along with a timestamp. We also have the social network of these users. This network represents the friendships between all users.
 
@@ -62,7 +60,7 @@ This fact should be considered in the subsequent analysis we do as it is based o
 Indeed, we might, as a lot of research in the scientific litterature, suffer from a [WEIRD (Western, educated, industrialized, rich and democratic) bias](https://www.apa.org/monitor/2010/05/weird). For example, it is quite probable that potential users that are not covered in our data and do not come from WEIRD countries will have other patterns in their long distance travels.
 The results we state should thus be taken with a grain of salt. 
 
-### How to detect plane travels 
+## How to detect plane travels 
 
 We now want to detect plane travels from the check-ins we have. To do so we look at all the check-ins of each user and consider all pairs of consecutive check-ins that are far enough as a plane trip. An important parameter we need to consider is what distance to use as a threshold to determine if two check-ins are distant enough. After trying different values we decide to use 500km as minimum distance. Indeed, we think that it is really likely that a majority of trips longer than this are done by plane. 
 To make our analysis even more precise we decide to detect the airports used at the beginning and end of each trip. To do so we take a list of all airports in the world and determine the closest one to the each check-in right before and after the detected long-distance trips. As our list of airports contains very precise data (airports, small airports, aerodromes, heliports, military bases, etc...) we decide to only consider large airports as these are the ones used by most commercial airline companies for their regular trips.  
@@ -75,7 +73,7 @@ We see that our estimation works well, indeed most check-ins before and after a 
 
 After doing this we get the information for 24'243 trips made by plane between 606 airports worldwide.
 
-### Which countries travel the most?
+## Which countries travel the most?
 
 Now that we have detected plane travels, we want to see which countries have residents travelling the most. As this question can be interpreted differently, we will use two metrics, travelled distance and number of flights to be as thorough as possible. To have comparable data, we normalize it temporally to have the flown distance and number of flights over a year and then we divide the results by the amount of users per country, so that our metrics correspond to an average year for an average user of each country.
 
@@ -239,7 +237,7 @@ Below, we show the top 10 countries according to each metric:
 
 We notice something interesting when looking at the tables above, most present countries are also in the top 20 of GDP per capita according to the [International Monetary Fund (IMF)](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita). This illustrates a correlation between the their economic well-being and their capacity to travel by plane. However, there are some outliers, in the first table we see that people living in The Philliines, even though they are ranked low in GDP per capita, are flying a lot of milleage. This is not surprising since their country is made of 7'000 islands in the ocean, so every time they travel they need to cross the waters around them in order to reach any destination. This intrinsic way of travelling will naturally increase the flown distance more rapidely than a landlock country such as Switzerland, even though they travel a bit less frequently (N° 14 in most trips per year). We also see that people living in China, are not in the top travellers by number of flights (N°15  in most trips per year) but tend to fly further,  similarly to people from The Philippines. The average Chinese user is thus flying less frequently but further. For Mexico, we see the opposite trend, they fly more frequently but shorter distances (N° 20 in furtest distance by year). This might be due to the fact that their country is large enough so that they take short domestic flights which are cheaper than long international flights.
 
-### Flight patterns over time
+## Flight patterns over time
 
 We now want to see how these two metrics evolve throughout the year. We look at the variation between months of the year in this section.
 
@@ -280,7 +278,7 @@ The trend we observe here is very similar to the one for the flown distance, mea
 
 As one could expect, we see the same trend appearing for the number of travels. 
 
-### Analysis of the global network of airports
+## Analysis of the global network of airports
 
 We now would like to see how the airports are connected amongst themselves. The 606 form a graph which is interesting to analyze. First we note that all airports form one connected component, this means that it is possible from any airport to reach any other airport in the world. It is sometimes needed to do layovers through other airports but it is always possible to reach any final destination from any starting airport. We do not have a scenario where some subset of airports are fully separated from the rest. We use different metrics to measure how tightly interconnected the airports are. We first see that the average shortest path between two airports is 1.96. This means that going from any airport A to any airport B on the globe takes on average just below two trips. 
 
@@ -420,7 +418,7 @@ Then we look at the betweeness of airports, this measure tells us which airports
 In the table above when the airport has a high betweeness score, it is one of the modt frequently used when travelling between two airports with the least amounts of layovers. Not surprisingly, we see that most of the airport that have a very high betweeness score are also some of the most connected. We also see that each of the three clusters are represented in this table.
 
 
-### Top 10 visited countries from each country
+## Top 10 visited countries from each country
 
 We now want to see what are the top destinations that are visited by plane from users of each country. To answer this question we need to be careful and not include return trips of users as this would just over-represent the home country. We still consider domestic flights as these can be made to visit a different place of the same country. Below we show the top 10 most visited countries for each country.
 
@@ -428,7 +426,7 @@ We now want to see what are the top destinations that are visited by plane from 
 
 We notice some interesting trends. First, most of the plane trips are made domestically for large enough countries (US, Russia, Brazil, China, Australia...). Second, people from countries in Europe travel mostly to European destinations. Lastly, we see that language plays a crucial role in the choice of destinations, countries speaking the same language tend to travel to eachother. For example english speaking countries such as Great Britain, The United States, Canada and Australia are in eachother's most visited destinations. The same pattern can be observed with Latin American countries and Spain and with Portugal and Brazil.
 
-### Top 10 friends' countries of each country 
+## Top 10 friends' countries of each country 
 
 Until now we mainly focused on the mobility of people. To expand our research domain we want to analyse what are the friendships’ relations between users of different countries based on the two friendship network we have available. To do so, we check all the friends for all users of each country, this way we are able to identify the degree of friendship between any pair of countries. To show the most significant results, we choose to only take the ten top friends’ countries for each country.
 
@@ -437,7 +435,7 @@ Until now we mainly focused on the mobility of people. To expand our research do
 As stated before, the results needs to be taken carefully because of the significant bias in favour of North America. 
 Unfortunately, we can see that most of the countries have unexpected data for their friendships. Indeed it would be realistic that most friends of people living in a country are also from the same country. However, many countries seem to have the majority of their friends in the US. The reason for this might be that the data from the apps Gowalla and Brightkite does not reflect the actual distribution of friendships. We are only confident with the data presented in the case of the United States, as we obtain the majority of friends inside the country (70.81%) followed by friendships in the United Kingdom and Canada which are both english-speaking countries. For the case of the US it seems that there is a corrolation between visited countries and countries with friends of people living in the US, but since we are not onfident with the friendship data of other countries we cannot investigate this further and give clear results.
 
-### Prediction
+## Prediction
 
 Finally, we check if it is possible to infer people’s home areas based on their flight patterns. Predicting the country home area is quite difficult because we have not enough data, and too much bias in it. In order to be more global, we decide to predict if a user lives in North America, Europe or Asia, the three most represented continents. For each continent, we picked users that travel the most so that they represent the most their home area, as some users of the app are not well presented in the flight data, as they might have not used it while travelling. 
 
@@ -451,9 +449,14 @@ We can observe a link between patterns and continents, so we now try to use mach
 
 Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 81.2%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
 
-### Conclusion
+## Conclusion
 
+We performed an analysis on data on human mobility to get insights on the travels made by plane. We note that the underlying data suffers from a WEIRD (Western, Educated, Industrialized, Rich and Democratic) bias. We found that countries which fly most frequently and the longest distance are usually the same and they highly tend to posess a high GDP per capita. Also, we detect patterns in air traffic throughout the year, we notice that the Northern and Southern hemisphere travel differently, each having a peak of travels in its respective summer. We oberve that airports form a connected graph all over the world with three hubs in North America, Europe and Eastern Asia. By looking at the most frequent destinations per country we observe a trend based on language, people travel to places in which they peak the language. We also see that people from big countries tend to travel a lot domestically and Europeans travel a lot in Europe. The data we have on friedships is highy biased towards the United States and we cannot show any clear link between friends and visited countries. Finally, using machine learning techniques (neural network) we are able to predict the home continent of a user of Northern America, Europe or Asia based on her travel patterns throughout the year. Our model is encouraging and with more data it could even be possible to predict users' home countries.
 
+This analysis can help for the mysterious murders in the following way:
+- Focusing on the most central airports stated above could help in finding the criminal.
+- If the home country of the murederer is known, we can reduce the list of destinations to the top 10 visited ones and to the time of the year when there is the most travel.
+- On the contrary, if the home country is unknown but we have travel data, we can use the prediction model to estimate the home country of the criminal.
 
 
 <center> 
@@ -463,9 +466,9 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
   <br>
   <thead>
     <tr>
-      <td align="center">Sherlock Holmes</th>
-      <td align="center">Enola Holmes</th>
-      <td align="center">Doctor Watson</th>
+      <th style="text-align:center">Sherlock Holmes</th>
+      <th style="text-align:center">Enola Holmes</th>
+      <th style="text-align:center">Doctor Watson</th>
     </tr>
   </thead>
   <tbody>
