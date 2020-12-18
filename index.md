@@ -10,9 +10,9 @@ order: 1
 
 Early 2000s, all the front pages of the news papers are covered by the same story: crimes are committed in different airports all around the world: John F. Kennedy International Airport, Sydney Kingsford Smith Airport, Cointrin Geneva Airport.. and the list is long. It seems some criminal dark mind is flying around the world to murder people. 
 
-It has been months now that the first crimes have been committed and the tragedies continue. People start being scared to take planes and the airline companies are worrying about their future. 
+It has been months now that the first crimes have been committed and the tragedies continue. People start being scared to take planes and airline companies are worrying about their future. 
 
-October 14th, 2010, all airline companies gathered together to find a solution and stop this macabre trend. They decided to take rational actions and call the most qualified team to elucidate this mystery and finally find who is responsible for those terrible acts. They obviously called the most qualified team in terms of discovering mysteries: the one and only Sherlock Holmes along with his little sister Enola Holmes, and his best friend Doctor Watson.
+October 14th, 2010, all airline companies gathered together to find a solution and stop this macabre trend. They obviously called the most qualified team in terms of discovering mysteries: the one and only Sherlock Holmes along with his little sister Enola Holmes, and his best friend Doctor Watson.
 
 Fortunately, the team has taken the ADA course from EPFL and they have a large collection of data about people's movements around the world. Enola Holmes proposes to analyse this data to get insight about plane travels globally and use it to help them catch the murderer before he strikes again.
 
@@ -29,14 +29,14 @@ We build up on the analysis of the paper *Friendship and Mobility: User Movement
 - Detect patterns in global air traffic over the year.
 - Describe the network of airports.
 - Find the most visited destinations by country.
-- See if there is a conection between friends and visited countries.
+- See if there is a connection between friends and visited countries.
 - Check if it is possible to predict home areas based on travel patterns.
 
 ## Key findings
 We can observe that there is a bias in the original data, which over-represents users from similar countries and maily the US. Then we see that:
 - People that travel the most are usually from countries with the largest GDP per capita.
 - We notice that traffic intensifies in different periods of the year according to the hemisphere in which a country lies. 
-- The network of airport is tightly connected and mainly constituted of 3 hubs (North America, Europe and Eastern Asia).
+- The network of airports is tightly connected and mainly constituted of 3 hubs (North America, Europe and Eastern Asia).
 - Very large countries frequently travel domestically and language plays a crucial role in the choice of destinations.
 - There is some overlap between main destinations and countries with most friends.
 - We manage to predict the living continent (North America, Europe or Asia) of a user based on his travel patterns with an accuracy of 80.4%.
@@ -56,7 +56,7 @@ The following map shows all estimated homes, with a color scale representing the
 
 By looking at the interactive map above, we can see that the density of our data is far from being uniformly spread around the world. There are some areas of the world such as Central Africa and Central Asia which are almost not covered. We see that most users we are considering are living in North America, Europe and Japan. 
 
-This fact should be considered in the subsequent analysis we do as it is based on data mainly covering specific and one can even argue similar areas of the world. 
+This fact should be considered in the subsequent analysis we do as it is based on data mainly covering specific and, one can even argue, similar areas of the world. 
 Indeed, we might, as a lot of research in the scientific litterature, suffer from a [WEIRD (Western, educated, industrialized, rich and democratic) bias](https://www.apa.org/monitor/2010/05/weird). For example, it is quite probable that potential users that are not covered in our data and do not come from WEIRD countries will have other patterns in their long distance travels.
 The results we state should thus be taken with a grain of salt. 
 
