@@ -18,8 +18,8 @@ order: 1
 ******** team **********
 
 <table align="center">
+  <caption>The team</caption>
   <thead>
-    <caption style="text-align:center">The team</caption>
     <tr>
       <th style="text-align:center">Sherlock Holmes</th>
       <th style="text-align:center">Enola Holmes</th>
