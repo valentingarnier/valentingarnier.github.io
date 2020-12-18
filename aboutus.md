@@ -17,6 +17,7 @@ order: 1
 
 ******** team **********
 
+<caption style="text-align:center">The team</caption>
 <table align="center">
   <thead>
     <tr>
