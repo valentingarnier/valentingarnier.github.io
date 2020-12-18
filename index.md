@@ -61,7 +61,7 @@ Below, we show the top 10 countries according to each metric:
 
 
 **<u>Top 10 countries flying the biggest distance per year</u>**
-
+<center>
 |N°   |Country          | Travelled distance over a year| GDP per capita ranking (IMF)   |
 |:---:|:---------------:|:-----------------------------:|:------------------------------:|
 |  1  | Sweden          | 21'537                        | 12                             |
@@ -74,10 +74,10 @@ Below, we show the top 10 countries according to each metric:
 |  8  | United States   | 5'549                         | 5                              |
 |  9  | China           | 4'931                         | 59                             |
 |  10 | Australia       | 4'919                         | 10                             |
-
+</center>
 
  **<u>Top 10 countries flying the most trips per year</u>**
-
+<center>
 |N°   |Country          | Average number of trips over a year| GDP per capita ranking (IMF)   |
 |:---:|:---------------:|:----------------------------------:|:------------------------------:|
 |  1  | Sweden          | 10.1                               | 12                             |
@@ -90,19 +90,24 @@ Below, we show the top 10 countries according to each metric:
 |  8  | Germany         | 1.9                                | 15                             |
 |  9  | Denmark         | 1.8                                | 7                              |
 |  10 | Mexico          | 1.7                                | 71                             |
+</center>
 
+We notice something interesting when looking at the tables above, most present countries are also in the top 20 of GDP per capita according to the [International Monetary Fund (IMF)](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita). This illustrates a correlation between the their economic well-being and their capacity to travel by plane. However, there are some outliers, in the first table we see that people living in The Philliines, even though they are ranked low in GDP per capita, are flying a lot of milleage. This is not surprising since their country is made of 7'000 islands in the ocean, so every time they travel they need to cross the waters around them in order to reach any destination. This intrinsic way of travelling will naturally increase the flown distance more rapidely than a landlock country such as Switzerland, even though they travel a bit less frequently (N° 14 in most trips per year). We also see that people living in China, are not in the top travellers by number of flights (N°15  in most trips per year) but tend to fly further,  similarly to people from The Philippines. The average Chinese user is thus flying less frequently but further. For Mexico, we see the opposite trend, they fly more frequently but shorter distances (N° 20 in furtest distance by year). This might be due to the fact that their country is large enough so that they take short domestic flights which are cheaper than long international flights.
 
-We notice something interesting when looking at the tables above, most present countries are also in the top 20 of GDP per capita according to the International Monetary Fund (IMF). This illustrates a correlation between the their economic well-being and their capacity to travel by plane. However, there are some outliers, in the first table we see that people living in The Philliines, even though they are ranked low in GDP per capita, are flying a lot of milleage. This is not surprising since their country is made of 7'000 islands in the ocean, so every time they travel they need to cross the waters around them in order to reach any destination. This intrinsic way of travelling will naturally increase the flown distance more rapidely than a landlock country such as Switzerland, even though they travel a bit less frequently (N° 14 in most trips per year). We also see that people living in China, are not in the top travellers by number of flights (N°15  in most trips per year) but tend to fly further,  similarly to people from The Philippines. The average Chinese user is thus flying less frequently but further. For Mexico, we see the opposite trend, they fly more frequently but shorter distances (N° 20 in furtest distance by year). This might be due to the fact that their country is large enough so that they take short domestic flights which are cheaper than long international flights.
+#### Vizualize the pattern of how people move over the world over time
 
-#### Vizualize the pattern of how people move over the world
+We now want to see how these two metrics evolve throughout the year. We look at the variation between months of the year in this section.
 
-Still using the check-ins of the possible guilties, we only kept pairs of check-ins which represents a travel by plane. To do so, firsty we only kept the one which are less than 1000km from an airport. Then we had to order chronologically all the check-in by person. Finally we kept all the pair of a check-in with the following one only if the distance between their respective closest airports was greater of 500km: we assumed that this threshold is large enough to consider that the person took the plane between them.
-
-In the following gif, we showed the air trafic according to the different months of the year. We can see that there are severaly big nodes which are mainly in the east North American coast, and in the center of Europe.
+First, we show the following GIF that depicts all airports and the number of flights connecting them throughout a month. The darker the link between them, the more connected the airports for the given month.
 
 <p align="center">
   <img src="assets/img/animated-2.gif" alt="animated" />
 </p>
+
+We can see that there are three big clusters for the global air traffic, North America, Europe and Eastern Asia. The airports in these clusters are strongly connected amongst themselves and the three big clusters are also well connected amongst themselves. This network can thus be considered as one with three big communities that are very dense and that are connected with so called *weak ties* which are significant.  
+We also notice some varying trends throughout the year. It seems that there is more traffic in January and during the summer, but to be more certain about this claim we make a more granular analysis.
+
+
 
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/global_distance_travelled.html" width="60%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
