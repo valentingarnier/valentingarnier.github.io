@@ -82,7 +82,7 @@ Now that we have detected plane travels, we want to see which countries have res
 Below, we show the top 10 countries according to each metric:
 
 <center>
-  <b><u>Top 10 countries flying the biggest distance per year</u></b>
+  <b>Top 10 countries flying the biggest distance per year</b>
 </center>
 <table align="center">
   <br>
@@ -160,7 +160,7 @@ Below, we show the top 10 countries according to each metric:
 <br>
 
 <center>
-  <b><u>Top 10 countries flying the most trips per year</u></b>
+  <b>Top 10 countries flying the most trips per year</b>
 </center>
 <table align="center">
   <br>
@@ -473,6 +473,13 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
       <td style="text-align:center"><img src="/assets/img/apo.png" width="120"></td>
       <td style="text-align:center"><img src="/assets/img/maina.png" width="120"></td>
       <td><img src="/assets/img/val.png" width="120"></td>
+   </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align:center">Alexander Apostolov</td>
+      <td style="text-align:center">Maina Orchampt-Mareschal</td>
+      <td style="text-align:center">Valentin Garnier</td>
    </tr>
   </tbody>
 </table>              
