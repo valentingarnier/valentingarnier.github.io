@@ -61,7 +61,7 @@ Below, we show the top 10 countries according to each metric:
 
 <p align="center">
   Top 10 countries flying the biggest distance per year
-</p>
+
 
 |N°   |Country          | Travelled distance over a year| GDP per capital ranking (IMF)  |
 |:---:|:---------------:|:-----------------------------:|:------------------------------:|
@@ -76,9 +76,11 @@ Below, we show the top 10 countries according to each metric:
 |  9  | China           | 4'931                         | 59                             |
 |  10 | Australia       | 4'919                         | 10                             |
 
+</p>
+
 <p align="center">
   Top 10 countries flying the most trips per year
-</p>
+
 
 |N°   |Country          | Average number of trips over a year| GDP per capital ranking (IMF)  |
 |:---:|:---------------:|:----------------------------------:|:------------------------------:|
@@ -92,6 +94,8 @@ Below, we show the top 10 countries according to each metric:
 |  8  | Germany         | 1.9                                | 15                             |
 |  9  | Denmark         | 1.8                                | 7                              |
 |  10 | Mexico          | 1.7                                | 71                             |
+
+</p>
 
 
 #### Vizualize the pattern of how people move over the world
