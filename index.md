@@ -24,11 +24,26 @@ Will this be enough to discover who's the one?
 
 ### Goals
 
+We build up on the analysis of the paper *Friendship and Mobility: User Movement in Location-Based Social Networks* by E. Cho, S. Myers and J. Leskovec which analyses the mobility of people and tries to unravel connections between movement and friends. Here we want to analyze more precisely the long-distance travels by plane using the data and some methods from the paper. Our main goals are to:
+- Find which countries travel the most.
+- Detect patterns in global air traffic.
+- Describe the network of airports.
+- Find the most visited destinations by country.
+- See if there is a conection between friends and visited countries.
+- Check if it is possible to predict home areas based on travel patterns.
+
 ### Key findings
+We can observe that there is a bias in the original data, which over-represents users from similar countries and maily the US. Then we see that:
+- People that travel the most are usually from countries with the largest GDP per capita.
+- We notice that traffic intensifies in different periods of the year according to the hemisphere in which a country lies. 
+- The network of airport is tightly connected and mainly constituted of 3 hubs (North America, Europe and Eastern Asia).
+- Very large countries frequently travel domestically and language plays a crucial role in the choice of destinations.
+- The friendships' data is very biased towards the United States and no correlation can be detected safely.
+- We manage to predict the continent (North America, Europe or Asia) of a user based on his travel patterns with an accuracy of 81%.
 
 ### Data at our disposal
 
-The data we have at our disposal represents over 10 million check-ins of 1.2 million users of the apps Gowalla and Brightkite. Each check-in represents a time a user has used the app and his or her GPS coordinates were recorded along with a timestamp.
+The data we have at our disposal represents over 10 million check-ins of 1.2 million users of the apps Gowalla and Brightkite. Each check-in represents a time a user has used the app and his or her GPS coordinates were recorded along with a timestamp. We also have the social network of these users. This network represents the friendships between all users.
 
 Thanks to these check-ins, we have estimated their homes, by discretizing the world into 25km2 cells, and taking the average of the check-ins inside the cell which contains most of them. We do this in two steps as there can be users who have been to multiple places around the world for holidays or work and we do not want to just take the avergae of all their check-ins. For example, if we just did the global average, a user that lives in Switzerland and has been to a long duration trip in Tahiti for the holidays would have his home estimated somewhere in the ocean around South America. By first taking the cell where the user has been the most, we can then confidently take the average without having too much of a bias. 
 
@@ -433,6 +448,10 @@ As we have a lot of dimensions of informations for each user we use a common tec
 We can observe a link between patterns and continents, so we now try to use machine learning techniques to predict the desired result.
 
 Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 81.2%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
+
+### Conclusion
+
+
 
 
 <center> 
