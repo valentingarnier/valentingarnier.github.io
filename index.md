@@ -33,7 +33,7 @@ We build up on the analysis of the paper *Friendship and Mobility: User Movement
 - Check if it is possible to predict home areas based on travel patterns.
 
 ## Key findings
-We can observe that there is a bias in the original data, which over-represents users from similar countries and maily the US. Then we see that:
+We can observe that there is a bias in the original data, which over-represents users from similar countries and maily the US. We found that:
 - People that travel the most are usually from countries with the largest GDP per capita.
 - We notice that traffic intensifies in different periods of the year according to the hemisphere in which a country lies. 
 - The network of airports is tightly connected and mainly constituted of 3 hubs (North America, Europe and Eastern Asia).
