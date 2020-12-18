@@ -473,9 +473,9 @@ This analysis can help for the mysterious murders in the following way:
   </thead>
   <tbody>
     <tr>
-      <td align="center"><img src="/assets/img/apo.png" width="120"></td>
-      <td align="center"><img src="/assets/img/maina.png" width="120"></td>
-      <td align="center"><img src="/assets/img/val.png" width="120"></td>
+      <center><img src="/assets/img/apo.png" width="120"></center>
+      <center><img src="/assets/img/maina.png" width="120"></center>
+      <center><img src="/assets/img/val.png" width="120"></center>
    </tr>
   </tbody>
   <tfoot>
