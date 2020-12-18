@@ -168,7 +168,7 @@ order: 1
       <td style="text-align:center">8</td>
       <td style="text-align:center">Germany</td>
       <td style="text-align:center">1.9</td>
-      <td style="text-align:center">7</td>
+      <td style="text-align:center">15</td>
     </tr>
     <tr>
       <td style="text-align:center">9</td>
