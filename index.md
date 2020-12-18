@@ -142,9 +142,9 @@ As one could expect, we see the same trend appearing for the number of travels.
 
 ### Analysis of the gloabal network of airports
 
-We now would like to see how the airports are connected amongst themselves. The 606 form a graph which is interesting to analyze. First we note that all airports form one connected component, this means that it is possible from any airport to reach any other airport in the world. It is sometimes needed to do layovers through other airports but it is always possible to reach any final destination from any starting airport. We do not have a scenario where some subset of airports are fully separated from the rest. We use different metrics to measure how well tight the airports are. We see that the average shortest path between two airports is 1.96. This means that going from any airport A to any airport B on the globe takes on average just below two trips. 
+We now would like to see how the airports are connected amongst themselves. The 606 form a graph which is interesting to analyze. First we note that all airports form one connected component, this means that it is possible from any airport to reach any other airport in the world. It is sometimes needed to do layovers through other airports but it is always possible to reach any final destination from any starting airport. We do not have a scenario where some subset of airports are fully separated from the rest. We use different metrics to measure how tightly interconnected the airports are. We first see that the average shortest path between two airports is 1.96. This means that going from any airport A to any airport B on the globe takes on average just below two trips. 
 
-We are now interested to see what are the top 10 most used airports. For this we will use two metrics.  
+We are now interested to see what are the top 10 most important airports. For this we will use two metrics.  
 First we look at the most connected airports, i.e. the airports from which you can reach the most other airports:
 
  **<u>Top 10 countries flying the most trips per year</u>**
@@ -162,9 +162,9 @@ First we look at the most connected airports, i.e. the airports from which you c
 |  9  | Austin Bergstrom International (US)         | 312          |
 |  10 | Tokyo Haneda International (JP)             | 290          |
 
-We see that each one of the three big clusters we entionned in air traffic (Nort America, Europe and Eastern Asia) has at least one airport that is really well connected to the rest of the network. We note that the is the country with the most connected airports.
+We see that each one of the three big clusters we mentionned earlier (Nort America, Europe and Eastern Asia) in the air traffic animation has at least one airport that is really well connected to the rest of the network. We note that the United States is the country with the most connected airports.
 
-Then we look at the betweeness of airports, this measure tells us which airports are used the most often to travel between any two random airports worldwide. Airports in the following list are the most frequently used when travelling between two airports with the least amounts of layovers:
+Then we look at the betweeness of airports, this measure tells us which airports are used the most often to travel between any two random airports worldwide. 
 
 |N°   |Airport (Country)                             | Betweeness score |
 |:---:|:--------------------------------------------:|:----------------:|
@@ -179,7 +179,7 @@ Then we look at the betweeness of airports, this measure tells us which airports
 |  9  | Austin Bergstrom International (US)          | 0.016            |
 |  10 | Paris-Orly (FR)                              | 0.016            |
 
-In the table above when the airport has a high betweeness score, it is used a lot in routes between other airports. Not surprisingly, we see that most of the airport that have a very high betweeness score are also some of the most connected. We also see that each of the three clusters are represented in this table.
+In the table above when the airport has a high betweeness score, it is one of the modt frequently used when travelling between two airports with the least amounts of layovers. Not surprisingly, we see that most of the airport that have a very high betweeness score are also some of the most connected. We also see that each of the three clusters are represented in this table.
 
 
 ### Analyse which are the top 10 countries to which people travels based on their own country
