@@ -18,7 +18,6 @@ order: 1
 <table align="center">
   <thead>
     <tr>
-      <th style="text-align:center"></th>
       <th style="text-align:center">Sherlock Holmes</th>
       <th style="text-align:center">Enola Holmes</th>
       <th style="text-align:center">Doctor Watson</th>
@@ -26,7 +25,6 @@ order: 1
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center"></td>
       <td style="text-align:center"><img src="/assets/img/apo.png" width="120"></td>
       <td style="text-align:center"><img src="/assets/img/maina.png" width="120"></td>
       <td><img src="/assets/img/val.png" width="120"></td>
