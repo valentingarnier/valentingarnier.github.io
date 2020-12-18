@@ -138,7 +138,7 @@ The trend we observe here is very similar to the one for the flown distance, mea
   <iframe style="margin:auto;display:block;" src="assets/number_trips_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
-As one coud expect, we see the same trend appearing for the number of travels. 
+As one could expect, we see the same trend appearing for the number of travels. 
 
 ### Analysis of the gloabal network of airports
 
