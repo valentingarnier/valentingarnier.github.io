@@ -59,10 +59,33 @@ Now that we have detected plane travels, we want to see which countries have res
 
 Below, we show the top 10 countries according to each metric:
 
-| Top 10 countries flying the biggest distance per year|
-:-----------------------------------------------------:|
-|![](/assets/img/apo.png)  |![](/assets/img/maina.png) |
-| Alexander Apostolov      | Maina Orchampt-Mareschal  |  
+ Top 10 countries flying the biggest distance per year
+:---------------------------------------------------------------------------------------:|
+|N°   |Country          | Travelled distance over a year| GDP per capital ranking (IMF)  |
+|  1  | Sweden          | 21'537                        | 12                             |
+|  2  | Singapor        | 10'064                        | 6                              |
+|  3  | Switzerland     | 8'903                         | 2                              |
+|  4  | Norway          | 7'971                         | 4                              |
+|  5  | Austria         | 6'476                         | 13                             |
+|  6  | The Philippines | 6'243                         | 119                            |
+|  7  | Belgium         | 6'214                         | 16                             |
+|  8  | United States   | 5'549                         | 5                              |
+|  9  | China           | 4'931                         | 59                             |
+|  10 | Australia       | 4'919                         | 10                             |
+
+ Top 10 countries flying the most trips per year
+:---------------------------------------------------------------------------------------:|
+|N°   |Country          | Average number of trips over a year| GDP per capital ranking (IMF)  |
+|  1  | Sweden          | 10.1                               | 12                             |
+|  2  | Norway          | 3.8                                | 4                              |
+|  3  | Switzerland     | 3.1                                | 2                              |
+|  4  | United States   | 2.6                                | 5                              |
+|  5  | Austria         | 2.5                                | 13                             |
+|  6  | Belgium         | 2.4                                | 16                             |
+|  7  | Singapor        | 2.2                                | 6                              |
+|  8  | Germany         | 1.9                                | 15                             |
+|  9  | Denmark         | 1.8                                | 7                              |
+|  10 | Mexico          | 1.7                                | 71                             |
 
 
 #### Vizualize the pattern of how people move over the world
