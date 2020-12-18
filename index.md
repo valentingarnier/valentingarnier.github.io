@@ -199,9 +199,17 @@ To do so, we found for each person the country where he lives based on his home.
 
 ### Prediction
 
-Here they applied three different classification algorithms for a problem of 3 balanced classes. Since classes are balanced and having false positives or negatives does not impact differently the results, they consider that accuracy is a good measure here of how the algorithms perform.
+Finally, we check if it is possible to infer people’s home areas based on their flight patterns. Predicting the country home area is quite difficult because we have not enough data, and too much bias in it. In order to be more global, we decide to predict if a user lives in North America, Europe or Asia, the three most represented continents. For each continent, we picked users that travel the most so that they represent the most their home area, as some users of the app are not well presented in the flight data, as they might have not used it while travelling. 
 
-Predicting at random would yield an accuracy of 33%. Here they obtained an accuracy of 47% which is slightly better than random predictions. This implies that predicting the continent where a user lives is possible using travel patterns over a year, but our data does not mark enough differences between continents. In order to validate if it is possible, they would need more balanced data between continents in the checkins.
+As we have a lot of dimensions of informations for each user we use a common technique called [PCA](https://en.wikipedia.org/wiki/Principal_component_analysis) to reduce these dimensions to only two significant ones so we can plot the data and see how the three groups are spread.
+
+<p align="center">
+  <img src="assets/img/pca.png" alt="PCA of users" />
+</p>
+
+We can observe a link between patterns and continents, so we now try to use machine learning techniques to predict the desired result.
+
+Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 81.6%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
 
 
 <center> <h2>About the team </h2> </center>
