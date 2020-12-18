@@ -435,7 +435,7 @@ Until now we mainly focused on the mobility of people. To expand our research do
 As stated before, the results needs to be taken carefully because of the significant bias in favour of North America. 
 Unfortunately, we can see that most of the countries have unexpected data for their friendships. Indeed it would be realistic that most friends of people living in a country are also from the same country. However, many countries seem to have the majority of their friends in the US. The reason for this might be that the data from the apps Gowalla and Brightkite does not reflect the actual distribution of friendships. We are only confident with the data presented in the case of the United States, as we obtain the majority of friends inside the country (70.81%) followed by friendships in the United Kingdom and Canada which are both english-speaking countries. For the case of the US it seems that there is a corrolation between visited countries and countries with friends of people living in the US, but since we are not onfident with the friendship data of other countries we cannot investigate this further and give clear results.
 
-## Prediction
+## Predicting home areas 
 
 Finally, we check if it is possible to infer people’s home areas based on their flight patterns. Predicting the country home area is quite difficult because we have not enough data, and too much bias in it. In order to be more global, we decide to predict if a user lives in North America, Europe or Asia, the three most represented continents. For each continent, we picked users that travel the most so that they represent the most their home area, as some users of the app are not well presented in the flight data, as they might have not used it while travelling. 
 
