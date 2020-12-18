@@ -432,10 +432,11 @@ We can observe a link between patterns and continents, so we now try to use mach
 Predicting at random between 3 continents would yield a score of 33%. We use a neural network to predict home area based on the number of trips and the distance traveled and we obtain an accuracy of 81.6%. This implies that predicting the continent where a user lives is possible using travel patterns over a year. This is very encouraging because with enough data representing the 3 main continents, our model can definitely predict in which continent a user lives based on his travel patterns. With more balanced data, it may even be possible to predict a user’s home country based on his flight patterns!
 
 
-<center> <h2>About the team </h2> </center><br>
+<center> <h2>About the team </h2> </center>
+
 <table align="center">
+  <br>
   <thead>
-    <caption>The team</caption>
     <tr>
       <th style="text-align:center">Sherlock Holmes</th>
       <th style="text-align:center">Enola Holmes</th>
