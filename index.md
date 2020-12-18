@@ -36,12 +36,11 @@ The following map shows all estimated homes, with a color scale representing the
 </p>
 
 
-We can note that some areas of the world such as Central Africa and Central Asia are almost not covered in the data we have. We see that most users we are consideringlive in Europe, North America and Japan.  
-This means that the results of this research are probably somehow biased since most users come from similar places.  
-All the following analysis should thus be interpreted keeping in mind this fact.  
-We might, as a lot of research in the scientific litterature,  suffer from a [WEIRD (Western, educated, industrialized, rich and democratic) bias](https://www.apa.org/monitor/2010/05/weird). 
-For example, it is quite probable that potential user that are not covered in our data and do not come from WEIRD countries will have other patterns in their long distance travels.
+By looking at the interactive map above, we can see that the density of our data is far from being uniformly spread around the world. There are some areas of the world such as Central Africa and Central Asia which are almost not covered. We see that most users we are considering are living in North America, Europe and Japan. 
 
+This fact should be considered in the subsequent analysis we do as it is based on data mainly covering specific and one can even argue similar areas of the world. 
+Indeed, we might, as a lot of research in the scientific litterature, suffer from a [WEIRD (Western, educated, industrialized, rich and democratic) bias](https://www.apa.org/monitor/2010/05/weird). For example, it is quite probable that potential users that are not covered in our data and do not come from WEIRD countries will have other patterns in their long distance travels.
+The results we state should thus be taken with a grain of salt. 
 
 
 #### Vizualize the pattern of how people move over the world
