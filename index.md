@@ -220,7 +220,7 @@ Below, we show the top 10 countries according to each metric:
 
 We notice something interesting when looking at the tables above, most present countries are also in the top 20 of GDP per capita according to the [International Monetary Fund (IMF)](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita). This illustrates a correlation between the their economic well-being and their capacity to travel by plane. However, there are some outliers, in the first table we see that people living in The Philliines, even though they are ranked low in GDP per capita, are flying a lot of milleage. This is not surprising since their country is made of 7'000 islands in the ocean, so every time they travel they need to cross the waters around them in order to reach any destination. This intrinsic way of travelling will naturally increase the flown distance more rapidely than a landlock country such as Switzerland, even though they travel a bit less frequently (N° 14 in most trips per year). We also see that people living in China, are not in the top travellers by number of flights (N°15  in most trips per year) but tend to fly further,  similarly to people from The Philippines. The average Chinese user is thus flying less frequently but further. For Mexico, we see the opposite trend, they fly more frequently but shorter distances (N° 20 in furtest distance by year). This might be due to the fact that their country is large enough so that they take short domestic flights which are cheaper than long international flights.
 
-### Vizualize the pattern of how people move over the world over time
+### Flight patterns over time
 
 We now want to see how these two metrics evolve throughout the year. We look at the variation between months of the year in this section.
 
@@ -261,7 +261,7 @@ The trend we observe here is very similar to the one for the flown distance, mea
 
 As one could expect, we see the same trend appearing for the number of travels. 
 
-### Analysis of the gloabal network of airports
+### Analysis of the global network of airports
 
 We now would like to see how the airports are connected amongst themselves. The 606 form a graph which is interesting to analyze. First we note that all airports form one connected component, this means that it is possible from any airport to reach any other airport in the world. It is sometimes needed to do layovers through other airports but it is always possible to reach any final destination from any starting airport. We do not have a scenario where some subset of airports are fully separated from the rest. We use different metrics to measure how tightly interconnected the airports are. We first see that the average shortest path between two airports is 1.96. This means that going from any airport A to any airport B on the globe takes on average just below two trips. 
 
@@ -401,20 +401,21 @@ Then we look at the betweeness of airports, this measure tells us which airports
 In the table above when the airport has a high betweeness score, it is one of the modt frequently used when travelling between two airports with the least amounts of layovers. Not surprisingly, we see that most of the airport that have a very high betweeness score are also some of the most connected. We also see that each of the three clusters are represented in this table.
 
 
-### Analyse which are the top 10 countries to which people travels based on their own country
+### Top 10 visited countries from each country
 
 TODO
 
 <iframe src="assets/top10visited.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
-### Analyse which are the top 10 countries where live the contacts of the people based on their own country
+### Top 10 countries with friends of each country 
 
-Until now we focused mainly on the mobility of the people. To expand a bit our research domain we want to analyse what are the friendships’ relations between the people of the different countries based on the two networks we have. To do so, once having the home of every user from which we found the associated country, we were able to identify the degree of friendship between a country and the others. To show the most significant results, we chose to only take the ten top friends’ countries for each country.
-As stated before, the results needs to be taken carefully because of the significant bias it has in favour of North America: unfortunately, most of the countries has a really small percentage of friendships inside itself or even don’t appear at all inside their own top ten which seem very unreal. Instead, in the case of the United States, it seems that the findings are rather good as we obtain the majority of friends inside itself (70.81%) following by the United Kingdom and the Canada which are both english-speaking countries.
+Until now we mainly focused on the mobility of people. To expand our research domain we want to analyse what are the friendships’ relations between users of different countries based on the two friendship network we have available. To do so, we check all the friends for all users of each country, this way we are able to identify the degree of friendship between any pair of countries. To show the most significant results, we choose to only take the ten top friends’ countries for each country.
 
 <iframe src="assets/top10friendships.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+As stated before, the results needs to be taken carefully because of the significant bias it has in favour of North America. 
+Unfortunately, most of the countries have a really small percentage of friendships inside themselves or even don’t appear at all inside their own top ten which seem very unreal. Instead, in the case of the United States, it seems that the findings are rather good as we obtain the majority of friends inside itself (70.81%) following by the United Kingdom and the Canada which are both english-speaking countries.
 
 ### Prediction
 
