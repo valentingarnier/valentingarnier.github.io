@@ -8,8 +8,10 @@ order: 1
 
 <center>
   
-|Sherlock Holmes            |  Enola Holmes             | Doctor Watson            |
-:--------------------------:|:-------------------------:|:------------------------:|
-|![](/assets/img/val.png)   |![](/assets/img/maina.png) |![](/assets/img/apo.png)  |
+|Sherlock Holmes                               |  Enola Holmes                                | Doctor Watson                               |
+:---------------------------------------------:|:--------------------------------------------:|:-------------------------------------------:|
+|<img src="/assets/img/apo.png" width="120">   |<img src="/assets/img/maina.png" width="120"> |<img src="/assets/img/val.png" width="120">  |
 
 </center>
+
+
