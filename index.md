@@ -20,10 +20,9 @@ Fortunately, the team has taken the ADA course from EPFL and they have a large c
 
 Will this be enough to discover who's the one?
 
-## How Sherlock and his team (we) has proceeded to solve the mystery
+## How Sherlock and his team (we) have proceeded to solve the mystery
 
-### Background
-#### Visualize how people are distributed over the world
+### Data at our disposal
 
 The data we have at our disposal represents over 10 million check-ins of 1.2 million users of the apps Gowalla and Brightkite. Each check-in represents a time a user has used the app and his or her GPS coordinates were recorded along with a timestamp.
 
@@ -42,7 +41,7 @@ This fact should be considered in the subsequent analysis we do as it is based o
 Indeed, we might, as a lot of research in the scientific litterature, suffer from a [WEIRD (Western, educated, industrialized, rich and democratic) bias](https://www.apa.org/monitor/2010/05/weird). For example, it is quite probable that potential users that are not covered in our data and do not come from WEIRD countries will have other patterns in their long distance travels.
 The results we state should thus be taken with a grain of salt. 
 
-#### How to detect plane travels 
+### How to detect plane travels 
 
 We now want to detect plane travels from the check-ins we have. To do so we look at all the check-ins of each user and consider all pairs of consecutive check-ins that are far enough as a plane trip. An important parameter we need to consider is what distance to use as a threshold to determine if two check-ins are distant enough. After trying different values we decide to use 500km as minimum distance. Indeed, we think that it is really likely that a majority of trips longer than this are done by plane. 
 To make our analysis even more precise we decide to detect the airports used at the beginning and end of each trip. To do so we take a list of all airports in the world and determine the closest one to the each check-in right before and after the detected long-distance trips. As our list of airports contains very precise data (airports, small airports, aerodromes, heliports, military bases, etc...) we decide to only consider large airports as these are the ones used by most commercial airline companies for their regular trips.  
@@ -53,7 +52,7 @@ Below we show the distribution of distances between our estimated airports and t
 
 We see that our estimation works well, indeed most check-ins before and after a long distance trip are usually close to airports. However we see there are some outliers after 1000km which are very far from airports for their long-distance trips. After analyzing those we realize they are mainly a few trips to really remote part of the world such as Antarctica and the Arctic and some remote islands without large airports. Because these represent only a small proportion of detected trips we safely ignore them.
 
-#### Which countries travel the most?
+### Which countries travel the most?
 
 Now that we have detected plane travels, we want to see which countries have residents travelling the most. As this question can be interpreted differently, we will use two metrics, travelled distance and number of flights to be as thorough as possible. To have comparable data, we normalize it temporally to have the flown distance and number of flights over a year and then we divide the results by the amount of users per country, so that our metrics correspond to an average year for an average user of each country.
 
@@ -94,7 +93,7 @@ Below, we show the top 10 countries according to each metric:
 
 We notice something interesting when looking at the tables above, most present countries are also in the top 20 of GDP per capita according to the [International Monetary Fund (IMF)](https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita). This illustrates a correlation between the their economic well-being and their capacity to travel by plane. However, there are some outliers, in the first table we see that people living in The Philliines, even though they are ranked low in GDP per capita, are flying a lot of milleage. This is not surprising since their country is made of 7'000 islands in the ocean, so every time they travel they need to cross the waters around them in order to reach any destination. This intrinsic way of travelling will naturally increase the flown distance more rapidely than a landlock country such as Switzerland, even though they travel a bit less frequently (N° 14 in most trips per year). We also see that people living in China, are not in the top travellers by number of flights (N°15  in most trips per year) but tend to fly further,  similarly to people from The Philippines. The average Chinese user is thus flying less frequently but further. For Mexico, we see the opposite trend, they fly more frequently but shorter distances (N° 20 in furtest distance by year). This might be due to the fact that their country is large enough so that they take short domestic flights which are cheaper than long international flights.
 
-#### Vizualize the pattern of how people move over the world over time
+### Vizualize the pattern of how people move over the world over time
 
 We now want to see how these two metrics evolve throughout the year. We look at the variation between months of the year in this section.
 
@@ -107,36 +106,43 @@ First, we show the following GIF that depicts all airports and the number of fli
 We can see that there are three big clusters for the global air traffic, North America, Europe and Eastern Asia. The airports in these clusters are strongly connected amongst themselves and the three big clusters are also well connected amongst themselves. This network can thus be considered as one with three big communities that are very dense and that are connected with so called *weak ties* which are significant.  
 We also notice some varying trends throughout the year. It seems that there is more traffic in January and during the summer, but to be more certain about this claim we make a more granular analysis.
 
-
+We first look at the distance travelled by month. The following bar plot shows how an average user travels throughout the year. We should note that this might be a bit biased towards the US as it is the country with the most users.
 
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/global_distance_travelled.html" width="60%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
+We see that there is a significant increase in flown distance between May and October as we saw in the animation above. This might be explained because it is usually a time of the year when  lot of people we have represented in the data (North America and Europe) have summer holidays andthus the time to go on longer trips further. However we do not see the increase of traffic in January on this gloabl trend. To look into more details we analyze the trend per country:
+
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/distance_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
+
+Here we see something interesting, there is a divide between countries in the Northern and Southern hemisphere of the globe. People living in Europe and North America tend to have a peak of travels in the summer months (June to September), while users from countries in the Southern hemisphere such as Australia, New Zealand, Brazil, Argentina or South Africa tend to have a peak in the first months of the year. This might be due to the fact that this corresponds to their summer and is when schools are on holidays and families tend to have more time to travel. This can also explain why we are seeing more traffic in the animated gif af air traffic above.
+
+We now do the same analysis for the number of trips. We first show the gloabl trend:
 
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/global_number_trips_travelled.html" width="60%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
+The trend we observe here is very similar to the one for the flown distance, meaning that the periods when user travel further are the same ones as the periods when user travel frequently. To see if we also see a North/South divide we show the data per country:
+
 <p align="center">
   <iframe style="margin:auto;display:block;" src="assets/number_trips_travelled.html" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
-Ajouter la courbe travel / mois (total et par country) --> que doit faire Apo + description
 
-At this point, we have a good background of where could live the real guilties and we know to what looks like the air traffic during those terrible months.
+As one coud expect, we see the same trend appearing for the number of travels. 
 
-### Analysis
-#### Analyse which are the top 10 countries to which people travels based on their own country
+
+### Analyse which are the top 10 countries to which people travels based on their own country
 
 TODO
 
 <iframe src="assets/top10visited.html" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
-#### Analyse which are the top 10 countries where live the contacts of the people based on their own country
+### Analyse which are the top 10 countries where live the contacts of the people based on their own country
 
 Now that we have the top 10 countries to which the possible guilties travel based on their own country, we tought to find some informations about where live the contacts of the possible guilties in order to guess who are the partners in crime of the guilty once they will find him.
 To do so, we found for each person the country where he lives based on his home. Then, thanks to the contact network we have, we manage to obtained the top 10 countries where live their contacts based on their own country. 
