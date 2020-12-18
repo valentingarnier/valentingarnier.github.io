@@ -470,9 +470,9 @@ Predicting at random between 3 continents would yield a score of 33%. We use a n
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center"><img src="/assets/img/apo.png" width="120"></td>
-      <td style="text-align:center"><img src="/assets/img/maina.png" width="120"></td>
-      <td style="text-align:center"><img src="/assets/img/val.png" width="120"></td>
+      <td align="center"><img src="/assets/img/apo.png" width="120"></td>
+      <td align="center"><img src="/assets/img/maina.png" width="120"></td>
+      <td align="center"><img src="/assets/img/val.png" width="120"></td>
    </tr>
   </tbody>
   <tfoot>
